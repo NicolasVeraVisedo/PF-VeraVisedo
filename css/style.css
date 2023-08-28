@@ -1,0 +1,824 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;400;500;700&display=swap");
+
+/*SELECTOR UNIVERSAL llamada Reset : resetea todos los estilos del navegador*/
+* {
+  margin: 0; /*Saca margenes*/
+  padding: 0; /*saca relleno*/
+  list-style: none; /*saca los puntitos*/
+}
+
+@font-face {
+  font-family: Heydex;
+  src: url(../fonts/Heydex.ttf);
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+/*Barra de navegación*/
+.barranavegacion {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "precaucion__cont precaucion__cont precaucion__cont precaucion__cont"
+    "logo__cont buscar__cont buscar__cont buscar__cont"
+    "barranavegacion__nav barranavegacion__nav barranavegacion__nav barranavegacion__nav";
+  grid-template-rows: 30px 70px 50px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.barranavegacion__nav {
+  grid-area: barranavegacion__nav;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.precaucion__cont {
+  background-color: rgba(251, 255, 0, 0.877);
+  grid-area: precaucion__cont;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+}
+
+.logo__cont {
+  width: fit-content;
+  margin: 0 auto;
+  grid-area: logo__cont;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid pink;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.buscar__cont {
+  grid-area: buscar__cont;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.barranavegacion__nav .active a {
+  background-color: rgb(247, 88, 115);
+  color: #fff;
+}
+
+.barranavegacion h5,
+h6 {
+  margin: 2px;
+  color: rgb(0, 0, 0);
+  font-family: sans-serif;
+}
+
+.logo__cont img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 100px;
+  border: 2px solid pink;
+  margin-right: 10px;
+}
+
+.logo__cont span {
+  font-family: Heydex;
+  font-size: 60px;
+  color: rgb(255, 191, 251);
+}
+
+.barranavegacion ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: pink;
+}
+
+.barranavegacion li {
+  float: left;
+}
+
+.barranavegacion li a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.barranavegacion li a:hover {
+  background-color: #ffffff;
+}
+
+.buscar__cont input {
+  width: 800px;
+  height: 30px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-color: pink;
+  outline: none;
+  font-size: 17px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.search-button {
+  background-color: pink;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.search-button:hover {
+  background-color: rgb(252, 149, 245);
+}
+
+.search-button i {
+  font-size: 17px;
+}
+
+/*Fin de barra de navegacion*/
+
+main {
+  color: rgb(0, 0, 0);
+  margin-top: 144px;
+}
+
+/* COMIENZO DE INDEX */
+
+/*Banner principal con logo*/
+
+.banner__container video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.banner__container {
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.banner__container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 230%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.236);
+  mix-blend-mode: overlay;
+}
+
+/*Fin de Banner principal con logo*/
+
+/*Bebidas CON alcohol*/
+
+.bebalc {
+  width: 90%;
+  display: grid;
+  grid-template-areas:
+    "titu__bebalc titu__bebalc titu__bebalc titu__bebalc titu__bebalc titu__bebalc"
+    "imag__bebalc imag__bebalc imag__bebalc imag__bebalc imag__bebalc imag__bebalc"
+    "imag__bebalc imag__bebalc imag__bebalc imag__bebalc imag__bebalc imag__bebalc";
+  grid-template-rows: 50px 350px 200px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  margin: 70px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgb(255, 72, 0);
+}
+
+.titu__bebalc {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.877);
+  grid-area: titu__bebalc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  /* margin-left: 100px; */
+  color: white;
+  border-radius: 10px;
+}
+.titu__bebalc a {
+  text-decoration: none;
+  color: rgb(255, 72, 0);
+  border: 2px solid rgb(255, 72, 0);
+  background-color: rgb(0, 0, 0);
+  border-radius: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.titu__bebalc a:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.imag__bebalc {
+  width: fit-content;
+  margin: 0 auto;
+  grid-area: imag__bebalc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+}
+
+.bebalc img {
+  width: 140px;
+  height: 270px;
+  margin: 40px;
+  border-radius: 10px;
+}
+
+.bebalc img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bebalc .imag__bebalc li {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  margin: 5px;
+  position: relative;
+  bottom: 5px;
+}
+.bebalc .imag__bebalc li:hover {
+  background-color: #ffffff;
+}
+/*Fin de Bebidas Con alcohol*/
+
+/* Boton Agregar al Carrito para ambas bebidas */
+.agregar-al-carrito {
+  background-color: pink;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.agregar-al-carrito:hover {
+  background-color: rgb(252, 149, 245);
+}
+
+/* Fin de Boton Agregar al Carrito para ambas bebidas */
+
+/*Bebidas SIN alcohol*/
+
+.bebsinalc {
+  width: 90%;
+  display: grid;
+  grid-template-areas:
+    "titu__sinalc titu__sinalc titu__sinalc titu__sinalc titu__sinalc titu__sinalc"
+    "imag__sinalc imag__sinalc imag__sinalc imag__sinalc imag__sinalc imag__sinalc"
+    "imag__sinalc imag__sinalc imag__sinalc imag__sinalc imag__sinalc imag__sinalc";
+  grid-template-rows: 50px 350px 200px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  margin: 70px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgb(255, 72, 0);
+}
+
+.titu__sinalc {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.877);
+  grid-area: titu__sinalc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  /* margin-left: 100px; */
+  color: white;
+  border-radius: 10px;
+}
+.titu__sinalc a {
+  text-decoration: none;
+  color: rgb(255, 72, 0);
+  border: 2px solid rgb(255, 72, 0);
+  background-color: rgb(0, 0, 0);
+  border-radius: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.titu__sinalc a:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.imag__sinalc {
+  width: fit-content;
+  margin: 0 auto;
+  grid-area: imag__sinalc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+}
+
+.bebsinalc img {
+  width: 140px;
+  height: 270px;
+  margin: 40px;
+  border-radius: 10px;
+}
+
+.bebsinalc img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bebsinalc .imag__sinalc li {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  margin: 5px;
+  position: relative;
+  bottom: 5px;
+}
+.bebsinalc .imag__sinalc li:hover {
+  background-color: #ffffff;
+}
+/*Fin de Bebidas SIN alcohol*/
+
+/*Sección Data*/
+#carouselExampleDark {
+  width: 100%;
+  height: 100%;
+}
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+  font-size: 60px;
+  font-family: var(--lg-font);
+  border-radius: 20px;
+}
+.carousel-item .btn {
+  border-color: #fff !important;
+}
+.carousel-item .btn:hover {
+  border-color: var(--pink) !important;
+}
+
+/*Fin de Sección Data*/
+
+/*Seccion ofertas*/
+.ofertas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(253, 226, 230);
+  text-align: center;
+  margin: 100px;
+  gap: 10px;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+}
+
+.formulario {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(253, 226, 230);
+  color: black;
+}
+
+.email__container input[type="email"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-color: rgb(255, 0, 43);
+  outline-style: double;
+  width: 300px;
+  height: 30px;
+  padding: 5px 10px;
+}
+
+.form_control {
+  padding: 10px;
+}
+
+.form_control input[type="submit"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  width: 60px;
+  height: 30px;
+}
+
+.form_control input:hover {
+  background-color: pink;
+}
+/*Fin de Seccion ofertas*/
+
+/*Video marcas*/
+.videomarcas {
+  background-color: black;
+  margin-left: 800px;
+  margin-bottom: 50px;
+  padding: 10px;
+  border-radius: 50px 0px 0px 50px;
+}
+.videomarcas video {
+  position: relative;
+  width: 85%;
+  border-radius: 50px;
+}
+/*Fin de video marcas*/
+
+/*Pie de página*/
+
+.container-fluid {
+  text-align: center;
+}
+
+.container-fluid img {
+  width: 15%;
+}
+
+/*Fin de Pie de página*/
+
+/* FIN DE INDEX */
+
+/* COMIENZO DE BEBIDAS CON/SIN ALCOHOL */
+
+/* Encabezado */
+.header__bebidas {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  margin-top: 200px;
+}
+.header__bebidas img {
+  width: 100%;
+  height: 10%;
+  border-radius: 500px;
+}
+.header__bebidas h1 {
+  position: relative;
+  bottom: 500px;
+  font-size: 100px;
+  color: rgba(0, 0, 0, 0.473);
+}
+
+/* Fin de Encabezado */
+
+/* Seccion de filtros */
+.filters {
+  width: 80%;
+  display: grid;
+  grid-template-areas:
+    "filters__title"
+    "filters__options";
+  grid-template-rows: 20px 65px;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 20px 20px 20px 20px rgb(39, 39, 39, 39);
+  align-items: center;
+  text-align: center;
+  margin-left: 150px;
+  margin-bottom: 50px;
+}
+
+.filters__title {
+  grid-area: filters__title;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+}
+
+.filters__options {
+  grid-area: filters__options;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
+}
+
+.filter__option {
+  margin-bottom: 10px;
+}
+.filters__options:hover {
+  background-color: #7474743d;
+}
+.option__link {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.option__link:hover {
+  color: rgb(247, 88, 115);
+}
+
+#flexSwitchCheckDefault {
+  font-size: 20px;
+  border-color: #000000;
+  cursor: pointer;
+}
+
+.form-check:hover {
+  color: rgb(247, 88, 115);
+  transition: color 0.3s;
+}
+
+/* Fin de Seccion de filtros */
+/* Sección de productos */
+
+.container {
+  padding: 30px 0;
+}
+
+.container img {
+  width: 250px;
+  height: 500px;
+  margin: auto;
+}
+
+.container img:hover {
+  transform: scale(1.1);
+  transition: transform 1s ease-in-out;
+}
+
+/* Fin de Sección de productos */
+/* Botón "Ver Más" */
+.view-more {
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s;
+  margin-left: 740px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.view-more:hover {
+  background-color: #d35400;
+}
+/* Fin de Botón "Ver Más" */
+/* FIN DE BEBIDAS CON/SIN ALCOHOL */
+
+/* COMIENZO DE CONTACTO */
+
+/* Encabezado */
+.header__contacto {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  margin-top: 200px;
+}
+.header__contacto video {
+  width: 100%;
+  height: 10%;
+  border-radius: 500px;
+}
+.header__contacto h1 {
+  position: relative;
+  bottom: 500px;
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.397);
+}
+/* Fin de Encabezado */
+/* Información de contacto */
+.contact-info {
+  position: relative;
+  background-color: rgba(122, 31, 31, 0.295);
+  border-bottom: 2px solid #333;
+  border-top: 2px solid #333;
+  border-radius: 50px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  text-align: center;
+  bottom: 200px;
+}
+.contact-info:hover {
+  background-color: #d35400;
+  transition: background-color 1s;
+}
+.contact-info__title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.contact-info__item {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.contact-info__item i {
+  font-size: 30px;
+}
+
+.contact-info iframe {
+  border-radius: 5px 500px 5px 500px;
+}
+/* Fin de Información de contacto */
+/* Formulario de contacto */
+.contact-form {
+  background-color: rgba(122, 31, 31, 0.144);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(2, 2, 2, 2);
+  margin: 20px;
+  flex: 1;
+}
+.contact-form:hover {
+  background-color: #d35400;
+  transition: background-color 1s;
+}
+.contact-form__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.253);
+}
+
+.form__button {
+  background-color: rgba(0, 0, 0, 0.295);
+  color: white;
+  padding: 10px 20px;
+  border-bottom: 5px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-left: 700px;
+}
+
+.form__button i {
+  margin-right: 5px;
+}
+
+.form__button:hover {
+  background-color: #555;
+}
+/* Fin de Formulario de contacto */
+/* FIN DE CONTACTO */
+
+/* COMIENZO DE NOSOTROS */
+
+/* Encabezado */
+.header__nosotros {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #333;
+  color: white;
+}
+
+.header__nosotros--title {
+  font-size: 32px;
+}
+
+/* Contenedor principal */
+.main__nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Sección Nosotros */
+.about {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about__image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about__image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about__content {
+  flex: 2;
+}
+
+.about__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about__text {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* FIN DE NOSOTROS */
+
+/* MOBILE FIRST Y MEDIA QUERIES */
+
+/* Ajustes para tablets y dispositivos de pantalla más grande */
+@media (max-width: 768px) {
+  /*  .navegacion{
+        grid-template-areas: 
+        "precaucion__container precaucion__container precaucion__container precaucion__container precaucion__container"
+        "logo__container logo__container buscar__container buscar__container buscar__container"
+        "navegacion__nav navegacion__nav navegacion__nav navegacion__nav navegacion__nav";
+        grid-template-rows: 50px;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    .logo__container {
+        justify-content: flex-end;
+    }
+
+    .buscar__container {
+        justify-content: flex-end;
+    }
+
+    .buscar__container input{
+        display: none;
+    }
+
+    .navegacion__nav {
+        justify-content: space-around;
+    }
+
+    .bebalc section,
+    .bebsinalc section {
+        width: 45%;
+    } */
+}
+/* Ajustes para pantallas de escritorio */
+@media (max-width: 1024px) {
+  /*  .navegacion{
+        grid-template-areas: 
+        "precaucion__container precaucion__container precaucion__container precaucion__container precaucion__container"
+        "logo__container logo__container buscar__container buscar__container buscar__container"
+        "navegacion__nav navegacion__nav navegacion__nav navegacion__nav navegacion__nav";
+        grid-template-rows: 50px;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    .bebalc section,
+    .bebsinalc section {
+        width: 30%;
+    } */
+}

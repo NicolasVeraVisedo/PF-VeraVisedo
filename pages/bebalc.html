@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!--<meta charset="UTF-8" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link rel="shortcut icon" href="../img/logos/logo1.png" type="image/png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <title>Vervis: Tienda de Bebidas</title>
+  </head>
+  <body>
+    <!--Barra de Navegacion-->
+
+    <nav class="barranavegacion">
+      <section class="precaucion__cont">
+        <p>
+          <em>BEBER CON MODERACION. PROHIBIDA SU VENTA A MENORES DE 18 AÑOS</em>
+        </p>
+        <p>
+          <i class="bx bx-cart"></i>ENVÍO GRATIS EN COMPRAS A PARTIR DE $12.000
+        </p>
+      </section>
+
+      <section class="logo__cont">
+        <img src="../img/logos/logo1.png" alt="Logotipo Vervis" class="logo" />
+        <span>Vervis</span>
+      </section>
+
+      <section class="buscar__cont">
+        <form action="" method="">
+          <input
+            type="text"
+            name="q"
+            placeholder="Buscar Productos, Marcas y Ofertas..."
+          />
+          <button type="submit" class="search-button">
+            <i class="bx bx-search"></i>
+          </button>
+        </form>
+      </section>
+
+      <ul class="barranavegacion__nav">
+        <li class="nav__item">
+          <a href="../index.html">
+            <i class="bx bx-home"></i>
+            Principal
+          </a>
+        </li>
+        <li class="nav__item active">
+          <a href="../pages/bebalc.html">
+            <i class="bx bxs-drink"></i>
+            Bebidas con Alcohol
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="../pages/bebsinalc.html">
+            <i class="bx bx-drink"></i>
+            Bebidas sin Alcohol
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="../pages/nosotros.html">
+            <i class="bx bxs-user"></i>
+            Nosotros
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="../pages/contacto.html">
+            <i class="bx bxs-contact"></i>
+            Contacto
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Fin de barra de Navegacion-->
+
+    <header class="header__bebidas">
+      <img src="../media/cervezup.gif" alt="CervazaUp" />
+      <h1><i class="bx bxs-drink"></i>BEBIDAS CON ALCOHOL</h1>
+    </header>
+    <main>
+      <div class="filters">
+        <section class="filters__title">
+          <h2>Filtros</h2>
+        </section>
+
+        <ul class="filters__options">
+          <li class="filter__option">
+            <a href="#" class="option__link">
+              <i class="bx bx-sort"></i> Ordenar
+            </a>
+          </li>
+          <li class="filter__option">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Llegan Mañana</label>
+            </div>
+          </li>
+          <li class="filter__option">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Envío Gratis</label>
+            </div>
+          </li>
+          <li class="filter__option">
+            <a href="#" class="option__link">
+              <i class="bx bx-slider-alt"></i> Filtrar
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="../img/absolut.jpg" alt="Absolut" />
+              <div class="card-body">
+                <h5 class="card-title">Absolut Vodka 700ml</h5>
+                <p class="card-text">$ 7.191</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-primary">Detalles</a>
+                  </div>
+                  <a href="#" class="btn btn-success">Agregar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="../img/havana.jpg" alt="Havana" />
+              <div class="card-body">
+                <h5 class="card-title">Ron Havana Especial Dorado 750ml</h5>
+                <p class="card-text">$ 4.176</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-primary">Detalles</a>
+                  </div>
+                  <a href="#" class="btn btn-success">Agregar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="../img/champagne.jpg" alt="Champagne" />
+              <div class="card-body">
+                <h5 class="card-title">Champagne Baron B 750ml</h5>
+                <p class="card-text">$ 8.730</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-primary">Detalles</a>
+                  </div>
+                  <a href="#" class="btn btn-success">Agregar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="../img/malibu.jpg" alt="Malibu" />
+              <div class="card-body">
+                <h5 class="card-title">Ron Malibu Con Coco 750ml</h5>
+                <p class="card-text">$ 4.320</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-primary">Detalles</a>
+                  </div>
+                  <a href="#" class="btn btn-success">Agregar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="../img/fernet.jpg" alt="Fernet" />
+              <div class="card-body">
+                <h5 class="card-title">Aperitivo Fernet Branca 750cc</h5>
+                <p class="card-text">$ 2.720</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-primary">Detalles</a>
+                  </div>
+                  <a href="#" class="btn btn-success">Agregar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="../img/bacardi.jpg" alt="Bacardi" />
+              <div class="card-body">
+                <h5 class="card-title">Ron Bacardi Blanco Carta Blanca 750ml</h5>
+                <p class="card-text">$ 6.030</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-primary">Detalles</a>
+                  </div>
+                  <a href="#" class="btn btn-success">Agregar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Más productos -->
+      <button class="view-more">Ver Más</button>
+    </main>
+
+    <!--Sección pie de página -->
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row p-5 bg-black text-white">
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h3 mb-3">VERVIS</p>
+            <img
+              src="../img/logos/logo1.png"
+              alt="Logotipo Vervis"
+              class="logo"
+            />
+            <p class="h5">NUESTRA TIENDA DE BEBIDAS ONLINE</p>
+            <p class="h6">
+              Encontrá todas las bebidas con los mejores precios en nuestra
+              tienda online. Contactanos a nuestro mail o ws por cualquier
+              consulta o sugerencia.
+            </p>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h5">Medios de Pago</p>
+            <div class="mt-5 mb-3">
+              <img src="../img/pago/visa.png" alt="Visa" />
+              <img src="../img/pago/mastercard.png" alt="Mastercard" />
+              <img src="../img/pago/mercadopago.png" alt="Mercado pago" />
+            </div>
+            <div class="mb-3">
+              <img src="../img/pago/pagofacil.png" alt="Pago Facil" />
+              <img src="../img/pago/rapipago.png" alt="Rapipago" />
+              <img src="../img/pago/tarjeta-naranja.png" alt="Naranja" />
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h5 mb-4">Secciones</p>
+            <div class="mb-3">
+              <a class="text-white text-decoration-none" href="./index.html">
+                <i class="bx bx-home"></i>
+                Principal
+              </a>
+            </div>
+            <div class="mb-3">
+              <a
+                class="text-white text-decoration-none"
+                href="../pages/bebalc.html"
+              >
+                <i class="bx bxs-drink"></i>
+                Bebidas con Alcohol
+              </a>
+            </div>
+            <div class="mb-3">
+              <a
+                class="text-white text-decoration-none"
+                href="../pages/bebsinalc.html"
+              >
+                <i class="bx bx-drink"></i>
+                Bebidas sin Alcohol
+              </a>
+            </div>
+            <div class="mb-3">
+              <a
+                class="text-white text-decoration-none"
+                href="../pages/nosotros.html"
+              >
+                <i class="bx bxs-user"></i>
+                Nosotros
+              </a>
+            </div>
+            <div class="mb-3">
+              <a
+                class="text-white text-decoration-none"
+                href="../pages/contacto.html"
+              >
+                <i class="bx bxs-contact"></i>
+                Contacto
+              </a>
+            </div>
+            <div class="mb-3">
+              <a href="#top">Volver Arriba</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h5 mt-5">
+              Copyright Vervis: Tienda de Bebidas - &COPY;2023. Todos los
+              derechos reservados.
+            </p>
+            <p class="h5 mt-5">
+              Defensa de las y los consumidores. Para reclamos
+              <a href="https://autogestion.produccion.gob.ar/consumidores">
+                ingrese aquí</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Fin de sección pie de página -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
