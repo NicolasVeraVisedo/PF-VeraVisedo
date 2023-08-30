@@ -15,69 +15,63 @@
     <title>Vervis: Tienda de Bebidas</title>
   </head>
   <body>
-    <!--Barra de Navegacion-->
+    <div class="alert bg-dark alert-warning alert-dismissible fade show" role="alert">
+      <strong><em>BEBER CON MODERACION. PROHIBIDA SU VENTA A MENORES DE 18 AÑOS</em></strong>
+      <strong>ENVÍO GRATIS EN COMPRAS A PARTIR DE $12.000</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<!--Barra de Navegacion-->
+<nav class="navbar navbar-expand-md">
+  <div class="container-fluid">
 
-    <nav class="barranavegacion">
-      <section class="precaucion__cont">
-        <p>
-          <em>BEBER CON MODERACION. PROHIBIDA SU VENTA A MENORES DE 18 AÑOS</em>
-        </p>
-        <p>
-          <i class="bx bx-cart"></i>ENVÍO GRATIS EN COMPRAS A PARTIR DE $12.000
-        </p>
-      </section>
+    <a class="navbar-brand" href="#">
+      <img src="../img/logos/logo1.png" alt="Logotipo Vervis" class="logo" />
+      <span>Vervis</span>
+    </a>
 
-      <section class="logo__cont">
-        <img src="../img/logos/logo1.png" alt="Logotipo Vervis" class="logo" />
-        <span>Vervis</span>
-      </section>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <section class="buscar__cont">
-        <form action="" method="">
-          <input
-            type="text"
-            name="q"
-            placeholder="Buscar Productos, Marcas y Ofertas..."
-          />
-          <button type="submit" class="search-button">
-            <i class="bx bx-search"></i>
-          </button>
-        </form>
-      </section>
-
-      <ul class="barranavegacion__nav">
-        <li class="nav__item">
-          <a href="../index.html">
-            <i class="bx bx-home"></i>
-            Principal
-          </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto text-center">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html"><i class="bx bx-home"></i>Principal</a>
         </li>
-        <li class="nav__item">
-          <a href="../pages/bebalc.html">
-            <i class="bx bxs-drink"></i>
-            Bebidas con Alcohol
-          </a>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/bebalc.html"><i class="bx bxs-drink"></i>Bebidas con Alcohol</a>
+        </li>      
+        <li class="nav-item active">
+          <a class="nav-link" href="../pages/bebsinalc.html"><i class="bx bx-drink"></i>Bebidas sin Alcohol</a>
         </li>
-        <li class="nav__item">
-          <a href="../pages/bebsinalc.html">
-            <i class="bx bx-drink"></i>
-            Bebidas sin Alcohol
-          </a>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/nosotros.html"><i class="bx bxs-user"></i>Nosotros</a>
         </li>
-        <li class="nav__item">
-          <a href="../pages/nosotros.html">
-            <i class="bx bxs-user"></i>
-            Nosotros
-          </a>
-        </li>
-        <li class="nav__item active">
-          <a href="../pages/contacto.html">
-            <i class="bx bxs-contact"></i>
-            Contacto
-          </a>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/contacto.html"><i class="bx bxs-contact"></i>Contacto</a>
         </li>
       </ul>
-    </nav>
+      
+      <div class="search-and-icons text-center mb-2">
+        
+        <button type = "button" class = "btn position-relative">
+          <i class='bx bxs-user' ></i>
+        </button>
+        <button type = "button" class = "btn position-relative">
+          <i class='bx bx-heart' ></i>
+        </button>
+        <button type = "button" class = "btn position-relative">
+          <i class='bx bx-cart'></i></i>
+        </button>
+        <button type = "button" class = "btn position-relative">
+          <i class='bx bx-search-alt-2'></i>
+        </button>
+          
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Fin de barra de Navegacion-->
     <!-- Fin de barra de Navegacion-->
 
     <header class="header__contacto">
