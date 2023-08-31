@@ -655,15 +655,44 @@ i {
 
 /* Encabezado */
 .header__nosotros {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 40px 0;
-  background-color: #333;
-  color: white;
+  padding: 20px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  background-color: rgba(255, 192, 203, 0.514);
+  border-radius: 400px;
 }
 
-.header__nosotros--title {
-  font-size: 32px;
+.header__nosotros:hover {
+  background-color: rgba(0, 0, 0, 0.521);
 }
+
+.headernos_titu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  color: rgba(255, 255, 255, 0.473);
+}
+
+.header__nosotros img {
+  width: 40%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 20px 20px 20px 20px rgba(39, 39, 39, 0.39);
+  margin-bottom: 20px;
+}
+
+.header__nosotros i {
+  color: rgba(255, 255, 255, 0.473);
+}
+/* Fin de Encabezado */
 
 /* Contenedor principal */
 .main__nosotros {
@@ -680,23 +709,35 @@ i {
   background-color: white;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 10px 10px rgba(39, 39, 39, 39);
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 50px;
+}
+.about:hover {
+  background-color: black;
+  color: white;
 }
 
-.about__image {
+.about__video {
   flex: 1;
   margin-right: 20px;
 }
 
-.about__image img {
+.about__video video {
   width: 100%;
-  border-radius: 10px;
+  box-shadow: 0px 10px 30px 10px rgba(39, 39, 39, 39);
+  border-radius: 20px;
+}
+
+.about__video.mob {
+  display: none;
+  margin-bottom: 30px;
 }
 
 .about__content {
   flex: 2;
+  text-align: center;
 }
 
 .about__title {
@@ -728,8 +769,8 @@ i {
   .search-and-icons form {
     flex: 1;
   }
-/* fin  barra de navegacion */
-/* index */
+  /* fin  barra de navegacion */
+  /* index */
   .videomarcas {
     display: none;
   }
@@ -760,6 +801,17 @@ i {
     font-size: 40px;
   }
   /* fin pagina contacto */
+  /* comienzo pagina nosotros */
+  .headernos_titu {
+    font-size: 40px;
+  }
+  .about__video {
+    display: none;
+  }
+  .about__video.mob {
+    display: block;
+  }
+  /* fin pagina nosotros */
 }
 
 @media screen and (max-width: 768px) {
@@ -777,7 +829,7 @@ i {
     display: flex;
     align-items: center;
   }
-/* fin  barra de navegacion */
+  /* fin  barra de navegacion */
   /* index */
   .bebalc {
     grid-template-areas:
@@ -825,6 +877,17 @@ i {
     font-size: 30px;
   }
   /* fin pagina contacto */
+  /* comienzo pagina nosotros */
+  .headernos_titu {
+    font-size: 30px;
+  }
+  .about__video {
+    display: none;
+  }
+  .about__video.mob {
+    display: block;
+  }
+  /* fin pagina nosotros */
 }
 
 @media screen and (max-width: 576px) {
@@ -853,6 +916,17 @@ i {
     font-size: 20px;
   }
   /* fin pagina contacto */
+  /* comienzo pagina nosotros */
+  .headernos_titu {
+    font-size: 20px;
+  }
+  .about__video {
+    display: none;
+  }
+  .about__video.mob {
+    display: block;
+  }
+  /* fin pagina nosotros */
 }
 
 @media screen and (max-width: 420px) {
@@ -874,4 +948,15 @@ i {
     font-size: 10px;
   }
   /* fin pagina contacto */
+  /* comienzo pagina nosotros */
+  .headernos_titu {
+    font-size: 10px;
+  }
+  .about__video {
+    display: none;
+  }
+  .about__video.mob {
+    display: block;
+  }
+  /* fin pagina nosotros */
 }
