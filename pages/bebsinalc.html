@@ -15,59 +15,89 @@
     <title>Vervis: Tienda de Bebidas</title>
   </head>
   <body>
-    
-    <div class="alert bg-dark alert-warning alert-dismissible fade show" role="alert">
-      <strong><em>BEBER CON MODERACION. PROHIBIDA SU VENTA A MENORES DE 18 AÑOS</em></strong>
+    <div
+      class="alert bg-dark alert-warning alert-dismissible fade show"
+      role="alert"
+    >
+      <strong
+        ><em
+          >BEBER CON MODERACION. PROHIBIDA SU VENTA A MENORES DE 18 AÑOS</em
+        ></strong
+      >
       <strong>ENVÍO GRATIS EN COMPRAS A PARTIR DE $12.000</strong>
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
     </div>
-<!--Barra de Navegacion-->
+    <!--Barra de Navegacion-->
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
-
         <a class="navbar-brand" href="#">
-          <img src="../img/logos/logo1.png" alt="Logotipo Vervis" class="logo" />
+          <img
+            src="../img/logos/logo1.png"
+            alt="Logotipo Vervis"
+            class="logo"
+          />
           <span>Vervis</span>
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto text-center">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html"><i class="bx bx-home"></i>Principal</a>
+              <a class="nav-link" href="../index.html"
+                ><i class="bx bx-home"></i>Principal</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/bebalc.html"><i class="bx bxs-drink"></i>Bebidas con Alcohol</a>
-            </li>      
+              <a class="nav-link" href="../pages/bebalc.html"
+                ><i class="bx bxs-drink"></i>Bebidas con Alcohol</a
+              >
+            </li>
             <li class="nav-item active">
-              <a class="nav-link" href="../pages/bebsinalc.html"><i class="bx bx-drink"></i>Bebidas sin Alcohol</a>
+              <a class="nav-link" href="../pages/bebsinalc.html"
+                ><i class="bx bx-drink"></i>Bebidas sin Alcohol</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/nosotros.html"><i class="bx bxs-user"></i>Nosotros</a>
+              <a class="nav-link" href="../pages/nosotros.html"
+                ><i class="bx bxs-user"></i>Nosotros</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/contacto.html"><i class="bx bxs-contact"></i>Contacto</a>
+              <a class="nav-link" href="../pages/contacto.html"
+                ><i class="bx bxs-contact"></i>Contacto</a
+              >
             </li>
           </ul>
-          
+
           <div class="search-and-icons text-center mb-2">
-            
-            <button type = "button" class = "btn position-relative">
-              <i class='bx bxs-user' ></i>
+            <button type="button" class="btn position-relative">
+              <i class="bx bxs-user"></i>
             </button>
-            <button type = "button" class = "btn position-relative">
-              <i class='bx bx-heart' ></i>
+            <button type="button" class="btn position-relative">
+              <i class="bx bx-heart"></i>
             </button>
-            <button type = "button" class = "btn position-relative">
-              <i class='bx bx-cart'></i></i>
+            <button type="button" class="btn position-relative">
+              <i class="bx bx-cart"></i>
             </button>
-            <button type = "button" class = "btn position-relative">
-              <i class='bx bx-search-alt-2'></i>
+            <button type="button" class="btn position-relative">
+              <i class="bx bx-search-alt-2"></i>
             </button>
-              
           </div>
         </div>
       </div>
@@ -75,49 +105,60 @@
     <!-- Fin de barra de Navegacion-->
 
     <header class="header__bebidas">
-      <img src="../media/aguaup.gif" alt="CervazaUp" />
-      <h1><i class="bx bx-drink"></i>BEBIDAS SIN ALCOHOL</h1>
+      <img src="../media/aguaup.gif" alt="AguaUp" />
+      <div class="headerbeb_titu">
+        <i class="bx bx-drink"></i>BEBIDAS SIN ALCOHOL
+      </div>
     </header>
     <main>
+      <ul class="filters__options">
+        <li class="filter__option">
+          <a href="#" class="option__link">
+            <i class="bx bx-sort"></i> Ordenar por:
+          </a>
+        </li>
+        <li class="filter__option">
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckDefault"
+            />
+            <label class="form-check-label" for="flexSwitchCheckDefault"
+              >Llegan Mañana</label
+            >
+          </div>
+        </li>
+        <li class="filter__option">
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckDefault"
+            />
+            <label class="form-check-label" for="flexSwitchCheckDefault"
+              >Envío Gratis</label
+            >
+          </div>
+        </li>
+        <li class="filter__option">
+          <a href="#" class="option__link">
+            <i class="bx bx-slider-alt"></i> Filtrar por:
+          </a>
+        </li>
+      </ul>
 
-      <section class="filters__title">
-        <h2>Filtros</h2>
-      </section>
-
-      <div class="filters">
-        <ul class="filters__options">
-          <li class="filter__option">
-            <a href="#" class="option__link">
-              <i class="bx bx-sort"></i> Ordenar
-            </a>
-          </li>
-          <li class="filter__option">
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-              <label class="form-check-label" for="flexSwitchCheckDefault">Llegan Mañana</label>
-            </div>
-          </li>
-          <li class="filter__option">
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-              <label class="form-check-label" for="flexSwitchCheckDefault">Envío Gratis</label>
-            </div>
-          </li>
-          <li class="filter__option">
-            <a href="#" class="option__link">
-              <i class="bx bx-slider-alt"></i> Filtrar
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="container">
+      <div class="container_bebidas">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <div class="col">
             <div class="card shadow-sm">
               <img src="../img/agua.jpg" alt="Agua" />
               <div class="card-body">
-                <h5 class="card-title">Agua mineral Eco de los Andes Sin gas 1.5L</h5>
+                <h5 class="card-title">
+                  Agua mineral Eco de los Andes Sin gas 1.5L
+                </h5>
                 <p class="card-text">$ 402</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
@@ -192,7 +233,9 @@
             <div class="card shadow-sm">
               <img src="../img/speed.jpg" alt="Speed" />
               <div class="card-body">
-                <h5 class="card-title">Speed Energizante Unlimited Lata 473ml</h5>
+                <h5 class="card-title">
+                  Speed Energizante Unlimited Lata 473ml
+                </h5>
                 <p class="card-text">$ 693</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">

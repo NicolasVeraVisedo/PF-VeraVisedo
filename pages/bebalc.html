@@ -15,108 +15,142 @@
     <title>Vervis: Tienda de Bebidas</title>
   </head>
   <body>
+    <div
+      class="alert bg-dark alert-warning alert-dismissible fade show"
+      role="alert"
+    >
+      <strong
+        ><em
+          >BEBER CON MODERACION. PROHIBIDA SU VENTA A MENORES DE 18 AÑOS</em
+        ></strong
+      >
+      <strong>ENVÍO GRATIS EN COMPRAS A PARTIR DE $12.000</strong>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
     <!--Barra de Navegacion-->
-
-    <nav class="barranavegacion">
-      <section class="precaucion__cont">
-        <p>
-          <em>BEBER CON MODERACION. PROHIBIDA SU VENTA A MENORES DE 18 AÑOS</em>
-        </p>
-        <p>
-          <i class="bx bx-cart"></i>ENVÍO GRATIS EN COMPRAS A PARTIR DE $12.000
-        </p>
-      </section>
-
-      <section class="logo__cont">
-        <img src="../img/logos/logo1.png" alt="Logotipo Vervis" class="logo" />
-        <span>Vervis</span>
-      </section>
-
-      <section class="buscar__cont">
-        <form action="" method="">
-          <input
-            type="text"
-            name="q"
-            placeholder="Buscar Productos, Marcas y Ofertas..."
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="../img/logos/logo1.png"
+            alt="Logotipo Vervis"
+            class="logo"
           />
-          <button type="submit" class="search-button">
-            <i class="bx bx-search"></i>
-          </button>
-        </form>
-      </section>
+          <span>Vervis</span>
+        </a>
 
-      <ul class="barranavegacion__nav">
-        <li class="nav__item">
-          <a href="../index.html">
-            <i class="bx bx-home"></i>
-            Principal
-          </a>
-        </li>
-        <li class="nav__item active">
-          <a href="../pages/bebalc.html">
-            <i class="bx bxs-drink"></i>
-            Bebidas con Alcohol
-          </a>
-        </li>
-        <li class="nav__item">
-          <a href="../pages/bebsinalc.html">
-            <i class="bx bx-drink"></i>
-            Bebidas sin Alcohol
-          </a>
-        </li>
-        <li class="nav__item">
-          <a href="../pages/nosotros.html">
-            <i class="bx bxs-user"></i>
-            Nosotros
-          </a>
-        </li>
-        <li class="nav__item">
-          <a href="../pages/contacto.html">
-            <i class="bx bxs-contact"></i>
-            Contacto
-          </a>
-        </li>
-      </ul>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html"
+                ><i class="bx bx-home"></i>Principal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../pages/bebalc.html"
+                ><i class="bx bxs-drink"></i>Bebidas con Alcohol</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/bebsinalc.html"
+                ><i class="bx bx-drink"></i>Bebidas sin Alcohol</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/nosotros.html"
+                ><i class="bx bxs-user"></i>Nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contacto.html"
+                ><i class="bx bxs-contact"></i>Contacto</a
+              >
+            </li>
+          </ul>
+
+          <div class="search-and-icons text-center mb-2">
+            <button type="button" class="btn position-relative">
+              <i class="bx bxs-user"></i>
+            </button>
+            <button type="button" class="btn position-relative">
+              <i class="bx bx-heart"></i>
+            </button>
+            <button type="button" class="btn position-relative">
+              <i class="bx bx-cart"></i>
+            </button>
+            <button type="button" class="btn position-relative">
+              <i class="bx bx-search-alt-2"></i>
+            </button>
+          </div>
+        </div>
+      </div>
     </nav>
     <!-- Fin de barra de Navegacion-->
 
     <header class="header__bebidas">
       <img src="../media/cervezup.gif" alt="CervazaUp" />
-      <h1><i class="bx bxs-drink"></i>BEBIDAS CON ALCOHOL</h1>
+      <div class="headerbeb_titu">
+        <i class="bx bxs-drink"></i>BEBIDAS CON ALCOHOL
+      </div>
     </header>
     <main>
-      <div class="filters">
-        <section class="filters__title">
-          <h2>Filtros</h2>
-        </section>
+      <ul class="filters__options">
+        <li class="filter__option">
+          <a href="#" class="option__link">
+            <i class="bx bx-sort"></i> Ordenar por:
+          </a>
+        </li>
+        <li class="filter__option">
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckDefault"
+            />
+            <label class="form-check-label" for="flexSwitchCheckDefault"
+              >Llegan Mañana</label
+            >
+          </div>
+        </li>
+        <li class="filter__option">
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckDefault"
+            />
+            <label class="form-check-label" for="flexSwitchCheckDefault"
+              >Envío Gratis</label
+            >
+          </div>
+        </li>
+        <li class="filter__option">
+          <a href="#" class="option__link">
+            <i class="bx bx-slider-alt"></i> Filtrar por:
+          </a>
+        </li>
+      </ul>
 
-        <ul class="filters__options">
-          <li class="filter__option">
-            <a href="#" class="option__link">
-              <i class="bx bx-sort"></i> Ordenar
-            </a>
-          </li>
-          <li class="filter__option">
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-              <label class="form-check-label" for="flexSwitchCheckDefault">Llegan Mañana</label>
-            </div>
-          </li>
-          <li class="filter__option">
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-              <label class="form-check-label" for="flexSwitchCheckDefault">Envío Gratis</label>
-            </div>
-          </li>
-          <li class="filter__option">
-            <a href="#" class="option__link">
-              <i class="bx bx-slider-alt"></i> Filtrar
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="container">
+      <div class="container_bebidas">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <div class="col">
             <div class="card shadow-sm">
@@ -197,7 +231,9 @@
             <div class="card shadow-sm">
               <img src="../img/bacardi.jpg" alt="Bacardi" />
               <div class="card-body">
-                <h5 class="card-title">Ron Bacardi Blanco Carta Blanca 750ml</h5>
+                <h5 class="card-title">
+                  Ron Bacardi Blanco Carta Blanca 750ml
+                </h5>
                 <p class="card-text">$ 6.030</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
@@ -210,13 +246,13 @@
           </div>
         </div>
       </div>
-      <!-- Más productos -->
+      <!-- Más productos aquí -->
       <button class="view-more">Ver Más</button>
     </main>
 
     <!--Sección pie de página -->
 
-    <footer>
+    <footer class="footer__container">
       <div class="container-fluid">
         <div class="row p-5 bg-black text-white">
           <div class="col-xs-12 col-md-6 col-lg-3">

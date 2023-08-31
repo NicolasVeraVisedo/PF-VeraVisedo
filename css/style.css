@@ -24,7 +24,7 @@ body {
   background: url(../img/rojoraya.jpg);
   background-size: cover;
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   background-position: center;
 }
 /* ALERTA */
@@ -43,7 +43,6 @@ body {
   color: white;
 }
 /* FIN DE ALERTA */
-
 
 /* Barra de Navegación*/
 
@@ -65,16 +64,19 @@ body {
   font-size: 40px;
 }
 
-.navbar .navbar-nav .nav-link, i {
+.navbar .navbar-nav .nav-link,
+i {
   color: #ffffff;
 }
 
-.navbar .navbar-nav, .search-and-icons {
+.navbar .navbar-nav,
+.search-and-icons {
   background-color: rgb(255, 82, 111);
   border-radius: 50px;
 }
 
-.navbar .navbar-nav .nav-item:hover, .search-and-icons button[type="button"]:hover {
+.navbar .navbar-nav .nav-item:hover,
+.search-and-icons button[type="button"]:hover {
   border-bottom: 1px solid white;
   background-color: rgb(255, 40, 76);
   border-radius: 50px;
@@ -121,7 +123,7 @@ body {
 
 /*Fin de Banner principal con logo*/
 
-/*Bebidas CON alcohol*/
+/*section Bebidas CON alcohol*/
 
 .bebalc {
   width: 90%;
@@ -203,7 +205,7 @@ body {
 .bebalc .imag__bebalc li:hover {
   background-color: #ffffff;
 }
-/*Fin de Bebidas Con alcohol*/
+/*Fin de section Bebidas Con alcohol*/
 
 /* Boton Agregar al Carrito para ambas bebidas */
 .agregar-al-carrito {
@@ -223,7 +225,7 @@ body {
 
 /* Fin de Boton Agregar al Carrito para ambas bebidas */
 
-/*Bebidas SIN alcohol*/
+/*section Bebidas SIN alcohol*/
 
 .bebsinalc {
   width: 90%;
@@ -305,7 +307,7 @@ body {
 .bebsinalc .imag__sinalc li:hover {
   background-color: #ffffff;
 }
-/*Fin de Bebidas SIN alcohol*/
+/*Fin de section Bebidas SIN alcohol*/
 
 /*Sección Data*/
 #carouselExampleDark {
@@ -403,23 +405,29 @@ body {
 /* COMIENZO DE BEBIDAS CON/SIN ALCOHOL */
 
 /* Encabezado */
+
 .header__bebidas {
+  position: relative;
+  display: inline;
   text-align: center;
-  padding: 40px 0;
-  color: rgb(0, 0, 0);
-  margin-top: 100px;
 }
+
+.headerbeb_titu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  color: rgba(0, 0, 0, 0.473);
+}
+
 .header__bebidas img {
-  width: 80%;
-  height: 10%;
+  width: 100%;
+  height: 40%;
   border-radius: 500px;
   box-shadow: 20px 20px 20px 20px rgb(39, 39, 39, 39);
-}
-.header__bebidas h1 {
-  position: relative;
-  bottom: 500px;
-  font-size: 100px;
-  color: rgba(0, 0, 0, 0.473);
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .header__bebidas i {
@@ -429,16 +437,10 @@ body {
 /* Fin de Encabezado */
 
 /* Seccion de filtros */
-.filters__title {
-  display: inline;
-  text-align: center;
-  font-size: 24px;
-}
-
-.filters {
-  width: 80%;
+.filters__options {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   text-align: center;
@@ -446,61 +448,66 @@ body {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 20px 20px 20px 20px rgb(39, 39, 39, 39);
-  margin-left: 150px;
-  margin-bottom: 50px;
-}
-
-.filters .filters__options {
-  flex-direction: column;
-  list-style: none;
-  margin-top: 20px;
-  padding-top: 20px;
+  list-style: none
   border-top: 3px solid #ccc;
   border-bottom: 3px solid #ccc;
 }
 
-.filter__option {
+.filters__options .filter__option {
+  padding: 15px;
   margin-bottom: 10px;
+  border-right: 1px solid #00000070;
+  border-bottom: 1px solid #00000070;;
+  border-radius: 100px;
 }
-.filters__options:hover {
-  background-color: #7474743d;
+
+.filters__options .filter__option i{
+  color: black;
 }
-.option__link {
+
+.filters__options .filter__option:hover {
+  background-color: rgba(255, 32, 69, 0.603);
+  padding-left: 15px;
+  border-radius: 50px;
+}
+
+.filters__options .option__link {
   text-decoration: none;
   color: #333;
   font-size: 16px;
-  transition: color 0.3s;
 }
 
-.option__link:hover {
-  color: rgb(247, 88, 115);
+.filters__options .option__link:hover {
+  color: rgb(255, 255, 255);
+  transition: color 0.1s;
 }
 
-#flexSwitchCheckDefault {
+.filters__options .form-check-input {
   font-size: 20px;
   border-color: #000000;
   cursor: pointer;
 }
 
-.form-check:hover {
-  color: rgb(247, 88, 115);
-  transition: color 0.3s;
+.filters__options .form-check:hover {
+  color: white;
+  transition: color 0.1s;
 }
 
 /* Fin de Seccion de filtros */
 /* Sección de productos */
 
-.container {
-  padding: 30px 0;
+.container_bebidas {
+  padding: 30px;
 }
 
-.container img {
-  width: 250px;
-  height: 500px;
+.container_bebidas img {
+  width: 200px;
+  height: 440px;
   margin: auto;
+  margin-top: 50px;
 }
 
-.container img:hover {
+.container_bebidas img:hover {
   transform: scale(1.1);
   transition: transform 1s ease-in-out;
 }
@@ -508,6 +515,8 @@ body {
 /* Fin de Sección de productos */
 /* Botón "Ver Más" */
 .view-more {
+  display: block;
+  position: relative;
   background-color: #e67e22;
   color: white;
   border: none;
@@ -516,9 +525,8 @@ body {
   font-size: 16px;
   text-align: center;
   transition: background-color 0.3s;
-  margin-left: 740px;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 .view-more:hover {
@@ -688,7 +696,6 @@ body {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 960px) {
-
   .navbar {
     letter-spacing: 0.1em;
   }
@@ -712,6 +719,20 @@ body {
     width: 120px;
     height: 30px;
   }
+  /* fin index */
+  /* comienzo bebidas */
+  .headerbeb_titu {
+    font-size: 60px;
+  }
+
+  .filters__options .form-check-input {
+    font-size: 14px;
+  }
+
+  .filters__options .option__link, .form-check-label {
+    font-size: 18px;
+  }
+  /* fin bebidas */
 }
 
 @media screen and (max-width: 768px) {
@@ -728,6 +749,8 @@ body {
     display: flex;
     align-items: center;
   }
+
+  /* index */
   .bebalc {
     grid-template-areas:
       "titu__bebalc titu__bebalc titu__bebalc"
@@ -756,17 +779,53 @@ body {
     padding: 3px 6px;
     font-size: 12px;
   }
+  /* fin index */
+/* comienzo bebidas */
+  .headerbeb_titu {
+    font-size: 40px;
+  }
+  .filters__options .option__link, .form-check-label {
+    font-size: 14px;
+  }
+  .filters__options .form-check-input {
+    font-size: 12px;
+  }
+  /* fin bebidas */
 }
 
 @media screen and (max-width: 576px) {
+  /* index */
   .bebalc img,
   .bebsinalc img {
     width: 80px;
     height: 120px;
     margin: 10px;
   }
+  /* fin index */
+/* comienzo bebidas */
+.headerbeb_titu {
+  font-size: 30px;
+}
+.filters__options .option__link, .form-check-label {
+  font-size: 14px;
+}
+.filters__options .form-check-input {
+  font-size: 10px;
+}
+/* fin bebidas */
 }
 
 @media screen and (max-width: 420px) {
+/* comienzo bebidas */
+.headerbeb_titu {
+  font-size: 20px;
+}
+.filters__options .option__link, .form-check-label {
+  font-size: 14px;
+}
+.filters__options .form-check-input {
+  font-size: 10px;
+}
 
+/* fin bebidas */
 }
