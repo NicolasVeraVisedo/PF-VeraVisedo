@@ -409,8 +409,13 @@ i {
 
 .header__bebidas {
   position: relative;
-  display: inline;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 20px;
+  margin-bottom: 50px;
 }
 
 .headerbeb_titu {
@@ -423,18 +428,16 @@ i {
 }
 
 .header__bebidas img {
-  width: 100%;
-  height: 40%;
-  border-radius: 500px;
-  box-shadow: 20px 20px 20px 20px rgb(39, 39, 39, 39);
-  margin-bottom: 50px;
-  margin-top: 50px;
+  width: 40%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 20px 20px 20px 20px rgba(39, 39, 39, 0.39);
+  margin-bottom: 20px;
 }
 
 .header__bebidas i {
   color: rgba(0, 0, 0, 0.473);
 }
-
 /* Fin de Encabezado */
 
 /* Seccion de filtros */
@@ -540,40 +543,52 @@ i {
 
 /* Encabezado */
 .header__contacto {
-  text-align: center;
-  padding: 40px 0;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  margin-top: 200px;
-}
-.header__contacto video {
-  width: 100%;
-  height: 10%;
-  border-radius: 500px;
-}
-.header__contacto h1 {
   position: relative;
-  bottom: 500px;
-  font-size: 100px;
-  color: rgba(255, 255, 255, 0.397);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 50px;
 }
+
+.headercontac_titu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  color: rgba(255, 255, 255, 0.473);
+}
+
+.header__contacto img {
+  width: 40%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 20px 20px 20px 20px rgba(39, 39, 39, 0.39);
+  margin-bottom: 20px;
+}
+
+.header__contacto i {
+  color: rgba(255, 255, 255, 0.473);
+}
+
 /* Fin de Encabezado */
 /* Información de contacto */
 .contact-info {
   position: relative;
-  background-color: rgba(122, 31, 31, 0.295);
-  border-bottom: 2px solid #333;
-  border-top: 2px solid #333;
-  border-radius: 50px;
+  background-color: rgba(80, 0, 0, 0.582);
   padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 20px 20px 20px 20px rgb(39, 39, 39, 39);
   flex: 1;
   text-align: center;
   bottom: 200px;
+  margin-top: 300px;
+  color: white;
 }
 .contact-info:hover {
-  background-color: #d35400;
-  transition: background-color 1s;
+  background-color: rgba(151, 0, 0, 0.582);
 }
 .contact-info__title {
   font-size: 30px;
@@ -586,6 +601,7 @@ i {
 }
 .contact-info__item i {
   font-size: 30px;
+  color: pink;
 }
 
 .contact-info iframe {
@@ -594,16 +610,15 @@ i {
 /* Fin de Información de contacto */
 /* Formulario de contacto */
 .contact-form {
-  background-color: rgba(122, 31, 31, 0.144);
-  border-radius: 10px;
+  background-color: rgba(80, 0, 0, 0.582);
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(2, 2, 2, 2);
-  margin: 20px;
+  margin: 100px;
   flex: 1;
+  color: white;
 }
 .contact-form:hover {
-  background-color: #d35400;
-  transition: background-color 1s;
+  background-color: rgba(151, 0, 0, 0.582);
 }
 .contact-form__title {
   font-size: 24px;
@@ -611,16 +626,19 @@ i {
   text-align: center;
   border-bottom: 5px solid rgba(0, 0, 0, 0.253);
 }
-
 .form__button {
-  background-color: rgba(0, 0, 0, 0.295);
+  display: block;
+  position: relative;
+  background-color: #e67e22;
   color: white;
-  padding: 10px 20px;
-  border-bottom: 5px solid black;
+  border: none;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-  margin-left: 700px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 .form__button i {
@@ -697,6 +715,7 @@ i {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 960px) {
+  /* barra de navegacion */
   .navbar {
     letter-spacing: 0.1em;
   }
@@ -709,7 +728,8 @@ i {
   .search-and-icons form {
     flex: 1;
   }
-
+/* fin  barra de navegacion */
+/* index */
   .videomarcas {
     display: none;
   }
@@ -721,9 +741,9 @@ i {
     height: 30px;
   }
   /* fin index */
-  /* comienzo bebidas */
+  /* comienzo paginas bebidas */
   .headerbeb_titu {
-    font-size: 60px;
+    font-size: 40px;
   }
 
   .filters__options .form-check-input {
@@ -734,11 +754,17 @@ i {
   .form-check-label {
     font-size: 18px;
   }
-  /* fin bebidas */
+  /* fin paginas bebidas */
+  /* comienzo pagina contacto */
+  .headercontac_titu {
+    font-size: 40px;
+  }
+  /* fin pagina contacto */
 }
 
 @media screen and (max-width: 768px) {
   /* nav mobile */
+  /* barra de navegacion */
   .navbar .navbar-brand img {
     max-width: 7em;
   }
@@ -751,7 +777,7 @@ i {
     display: flex;
     align-items: center;
   }
-
+/* fin  barra de navegacion */
   /* index */
   .bebalc {
     grid-template-areas:
@@ -782,9 +808,9 @@ i {
     font-size: 12px;
   }
   /* fin index */
-  /* comienzo bebidas */
+  /* comienzo paginas bebidas */
   .headerbeb_titu {
-    font-size: 40px;
+    font-size: 30px;
   }
   .filters__options .option__link,
   .form-check-label {
@@ -793,7 +819,12 @@ i {
   .filters__options .form-check-input {
     font-size: 12px;
   }
-  /* fin bebidas */
+  /* fin paginas bebidas */
+  /* comienzo pagina contacto */
+  .headercontac_titu {
+    font-size: 30px;
+  }
+  /* fin pagina contacto */
 }
 
 @media screen and (max-width: 576px) {
@@ -805,22 +836,7 @@ i {
     margin: 10px;
   }
   /* fin index */
-  /* comienzo bebidas */
-  .headerbeb_titu {
-    font-size: 30px;
-  }
-  .filters__options .option__link,
-  .form-check-label {
-    font-size: 14px;
-  }
-  .filters__options .form-check-input {
-    font-size: 10px;
-  }
-  /* fin bebidas */
-}
-
-@media screen and (max-width: 420px) {
-  /* comienzo bebidas */
+  /* comienzo paginas bebidas */
   .headerbeb_titu {
     font-size: 20px;
   }
@@ -831,6 +847,31 @@ i {
   .filters__options .form-check-input {
     font-size: 10px;
   }
+  /* fin paginas bebidas */
+  /* comienzo pagina contacto */
+  .headercontac_titu {
+    font-size: 20px;
+  }
+  /* fin pagina contacto */
+}
 
-  /* fin bebidas */
+@media screen and (max-width: 420px) {
+  /* comienzo paginas bebidas */
+  .headerbeb_titu {
+    font-size: 10px;
+  }
+  .filters__options .option__link,
+  .form-check-label {
+    font-size: 14px;
+  }
+  .filters__options .form-check-input {
+    font-size: 10px;
+  }
+  /* fin paginas bebidas */
+
+  /* comienzo pagina contacto */
+  .headercontac_titu {
+    font-size: 10px;
+  }
+  /* fin pagina contacto */
 }
