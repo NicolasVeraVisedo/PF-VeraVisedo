@@ -82,8 +82,9 @@ i {
   border-radius: 50px;
 }
 
-.nav-item active {
-  background: #000000;
+.nav-item.active {
+  background: rgb(255, 0, 43);
+  border-radius: 50px;
 }
 
 /*Fin de barra de navegacion*/
@@ -448,7 +449,7 @@ i {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 20px 20px 20px 20px rgb(39, 39, 39, 39);
-  list-style: none
+  list-style: none;
   border-top: 3px solid #ccc;
   border-bottom: 3px solid #ccc;
 }
@@ -457,11 +458,11 @@ i {
   padding: 15px;
   margin-bottom: 10px;
   border-right: 1px solid #00000070;
-  border-bottom: 1px solid #00000070;;
+  border-bottom: 1px solid #00000070;
   border-radius: 100px;
 }
 
-.filters__options .filter__option i{
+.filters__options .filter__option i {
   color: black;
 }
 
@@ -729,7 +730,8 @@ i {
     font-size: 14px;
   }
 
-  .filters__options .option__link, .form-check-label {
+  .filters__options .option__link,
+  .form-check-label {
     font-size: 18px;
   }
   /* fin bebidas */
@@ -780,11 +782,12 @@ i {
     font-size: 12px;
   }
   /* fin index */
-/* comienzo bebidas */
+  /* comienzo bebidas */
   .headerbeb_titu {
     font-size: 40px;
   }
-  .filters__options .option__link, .form-check-label {
+  .filters__options .option__link,
+  .form-check-label {
     font-size: 14px;
   }
   .filters__options .form-check-input {
@@ -802,30 +805,32 @@ i {
     margin: 10px;
   }
   /* fin index */
-/* comienzo bebidas */
-.headerbeb_titu {
-  font-size: 30px;
-}
-.filters__options .option__link, .form-check-label {
-  font-size: 14px;
-}
-.filters__options .form-check-input {
-  font-size: 10px;
-}
-/* fin bebidas */
+  /* comienzo bebidas */
+  .headerbeb_titu {
+    font-size: 30px;
+  }
+  .filters__options .option__link,
+  .form-check-label {
+    font-size: 14px;
+  }
+  .filters__options .form-check-input {
+    font-size: 10px;
+  }
+  /* fin bebidas */
 }
 
 @media screen and (max-width: 420px) {
-/* comienzo bebidas */
-.headerbeb_titu {
-  font-size: 20px;
-}
-.filters__options .option__link, .form-check-label {
-  font-size: 14px;
-}
-.filters__options .form-check-input {
-  font-size: 10px;
-}
+  /* comienzo bebidas */
+  .headerbeb_titu {
+    font-size: 20px;
+  }
+  .filters__options .option__link,
+  .form-check-label {
+    font-size: 14px;
+  }
+  .filters__options .form-check-input {
+    font-size: 10px;
+  }
 
-/* fin bebidas */
+  /* fin bebidas */
 }
