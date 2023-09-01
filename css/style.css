@@ -69,8 +69,7 @@ i {
   color: #ffffff;
 }
 
-.navbar .navbar-nav,
-.search-and-icons {
+.navbar .navbar-nav, .search-and-icons {
   background-color: rgb(255, 82, 111);
   border-radius: 50px;
 }
@@ -82,6 +81,18 @@ i {
   border-radius: 50px;
 }
 
+.search-and-icons .buscar__container {
+  display: none;
+  border-radius: 50px;
+}
+.search-and-icons .buscar__container .form-control {
+  border-radius: 50px;
+}
+.search-and-icons .buscar__container i {
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 50px;
+}
 .nav-item.active {
   background: rgb(255, 0, 43);
   border-radius: 50px;
@@ -265,7 +276,7 @@ i {
 
 /*Fin de section Bebidas SIN alcohol*/
 
-/*Sección Data*/
+/*Sección Carrousel Data*/
 .carousel {
   width: 100%;
   height: 100%;
@@ -276,7 +287,7 @@ i {
   font-size: 60px;
 }
 
-/*Fin de Sección Data*/
+/*Fin de Sección Carrousel Data*/
 
 /*Seccion ofertas*/
 .ofertas {
@@ -474,7 +485,7 @@ i {
 .view-more {
   display: block;
   position: relative;
-  background-color: #e67e22;
+  background-color: rgb(247, 59, 90);
   color: white;
   border: none;
   border-radius: 5px;
@@ -487,12 +498,12 @@ i {
 }
 
 .view-more:hover {
-  background-color: #d35400;
+  background-color: rgb(248, 2, 43);
 }
 /* Fin de Botón "Ver Más" */
 /* FIN DE BEBIDAS CON/SIN ALCOHOL */
 
-/* COMIENZO DE CONTACTO */
+/* COMIENZO DE PAGINA CONTACTO */
 
 /* Encabezado */
 .header__contacto {
@@ -602,9 +613,9 @@ i {
   background-color: #555;
 }
 /* Fin de Formulario de contacto */
-/* FIN DE CONTACTO */
+/* FIN DE PAGINA CONTACTO */
 
-/* COMIENZO DE NOSOTROS */
+/* COMIENZO DE PAGINA NOSOTROS */
 
 /* Encabezado */
 .header__nosotros {
@@ -717,7 +728,7 @@ i {
     padding: 0.5em 1em;
   }
   .search-and-icons {
-    width: 50%;
+    width: 40%;
   }
   .search-and-icons form {
     flex: 1;
@@ -782,8 +793,15 @@ i {
     align-items: flex-end;
   }
   .search-and-icons {
+    width: 100%;
     display: flex;
     align-items: center;
+  }
+  .search-and-icons .buscar__container {
+    display: flex;
+  }
+  .search-and-icons #buscar__pantxl {
+    display: none;
   }
   /* fin  barra de navegacion */
   /* index */
@@ -797,7 +815,7 @@ i {
   /* fin index */
   /* comienzo paginas bebidas */
   .headerbeb_titu {
-    font-size: 30px;
+    font-size: 32px;
   }
   .filters__options .option__link,
   .form-check-label {
@@ -833,7 +851,7 @@ i {
   /* fin index */
   /* comienzo paginas bebidas */
   .headerbeb_titu {
-    font-size: 20px;
+    font-size: 25px;
   }
   .filters__options .option__link,
   .form-check-label {

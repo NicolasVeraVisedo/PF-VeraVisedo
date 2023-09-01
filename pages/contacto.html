@@ -15,63 +15,110 @@
     <title>Vervis: Tienda de Bebidas</title>
   </head>
   <body>
-    <div class="alert bg-dark alert-warning alert-dismissible fade show" role="alert">
-      <strong><em>BEBER CON MODERACION. PROHIBIDA SU VENTA A MENORES DE 18 AÑOS</em></strong>
+    <div
+      class="alert bg-dark alert-warning alert-dismissible fade show"
+      role="alert"
+    >
+      <strong
+        ><em
+          >BEBER CON MODERACION. PROHIBIDA SU VENTA A MENORES DE 18 AÑOS</em
+        ></strong
+      >
       <strong>ENVÍO GRATIS EN COMPRAS A PARTIR DE $12.000</strong>
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
     </div>
-<!--Barra de Navegacion-->
-<nav class="navbar navbar-expand-md">
-  <div class="container-fluid">
+    <!--Barra de Navegacion-->
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="../img/logos/logo1.png"
+            alt="Logotipo Vervis"
+            class="logo"
+          />
+          <span>Vervis</span>
+        </a>
 
-    <a class="navbar-brand" href="#">
-      <img src="../img/logos/logo1.png" alt="Logotipo Vervis" class="logo" />
-      <span>Vervis</span>
-    </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html"
+                ><i class="bx bx-home"></i>Principal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/bebalc.html"
+                ><i class="bx bxs-drink"></i>Bebidas con Alcohol</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/bebsinalc.html"
+                ><i class="bx bx-drink"></i>Bebidas sin Alcohol</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/nosotros.html"
+                ><i class="bx bxs-user"></i>Nosotros</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="../pages/contacto.html"
+                ><i class="bx bxs-contact"></i>Contacto</a
+              >
+            </li>
+          </ul>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto text-center">
-        <li class="nav-item">
-          <a class="nav-link" href="../index.html"><i class="bx bx-home"></i>Principal</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/bebalc.html"><i class="bx bxs-drink"></i>Bebidas con Alcohol</a>
-        </li>      
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/bebsinalc.html"><i class="bx bx-drink"></i>Bebidas sin Alcohol</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/nosotros.html"><i class="bx bxs-user"></i>Nosotros</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="../pages/contacto.html"><i class="bx bxs-contact"></i>Contacto</a>
-        </li>
-      </ul>
-      
-      <div class="search-and-icons text-center mb-2">
-        
-        <button type = "button" class = "btn position-relative">
-          <i class='bx bxs-user' ></i>
-        </button>
-        <button type = "button" class = "btn position-relative">
-          <i class='bx bx-heart' ></i>
-        </button>
-        <button type = "button" class = "btn position-relative">
-          <i class='bx bx-cart'></i></i>
-        </button>
-        <button type = "button" class = "btn position-relative">
-          <i class='bx bx-search-alt-2'></i>
-        </button>
-          
+          <div class="search-and-icons text-center mb-2">
+            <form class="buscar__container bg-black" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar..."
+                aria-label="Search"
+              />
+              <button class="btn position-relative" type="submit">
+                <i class="bx bx-search-alt-2"></i>
+              </button>
+            </form>
+
+            <button type="button" class="btn position-relative">
+              <i class="bx bxs-user"></i>
+            </button>
+            <button type="button" class="btn position-relative">
+              <i class="bx bx-heart"></i>
+            </button>
+            <button type="button" class="btn position-relative">
+              <i class="bx bx-cart"></i>
+            </button>
+            <button
+              id="buscar__pantxl"
+              type="submit"
+              class="btn position-relative"
+            >
+              <i class="bx bx-search-alt-2"></i>
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</nav>
-<!-- Fin de barra de Navegacion-->
+    </nav>
+    <!-- Fin de barra de Navegacion-->
     <!-- Fin de barra de Navegacion-->
 
     <header class="header__contacto">
@@ -84,7 +131,7 @@
     <main class="main__contacto">
       <section class="contact-info">
         <h2 class="contact-info__title">Información de Contacto</h2>
-        
+
         <p class="contact-info__item">
           <i class="bx bx-phone"></i>(123) 456-7890
         </p>
@@ -94,7 +141,14 @@
         <p class="contact-info__item">
           <i class="bx bx-map"></i>123 Calle Principal, Ciudad
         </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.45340467695!2d-58.51569949917947!3d-34.61565476818113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1692813254421!5m2!1ses!2sar" width="80%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.45340467695!2d-58.51569949917947!3d-34.61565476818113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1692813254421!5m2!1ses!2sar"
+          width="80%"
+          height="450"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
 
       <section class="contact-form">
