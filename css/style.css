@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;400;500;700&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;400;500;700&display=swap);
 
 /*SELECTOR UNIVERSAL llamada Reset : resetea todos los estilos del navegador*/
 * {
@@ -69,7 +69,8 @@ i {
   color: #ffffff;
 }
 
-.navbar .navbar-nav, .search-and-icons {
+.navbar .navbar-nav,
+.search-and-icons {
   background-color: rgb(255, 82, 111);
   border-radius: 50px;
 }
@@ -183,7 +184,8 @@ i {
   box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
   border-radius: 100px;
 }
-.container_bebalc .titu__bebalc h2:hover, h4:hover {
+.container_bebalc .titu__bebalc h2:hover,
+h4:hover {
   transform: scale(0.9);
   transition: transform 0.3s ease-in-out;
 }
@@ -261,7 +263,8 @@ i {
   box-shadow: 0px 0px 10px 5px rgb(252, 149, 245);
   border-radius: 100px;
 }
-.container_bebsinalc .titu__sinalc h2:hover, h4:hover {
+.container_bebsinalc .titu__sinalc h2:hover,
+h4:hover {
   transform: scale(0.9);
   transition: transform 0.3s ease-in-out;
 }
@@ -272,7 +275,6 @@ i {
   background-color: rgb(255, 255, 255);
   color: black;
 }
-
 
 /*Fin de section Bebidas SIN alcohol*/
 
