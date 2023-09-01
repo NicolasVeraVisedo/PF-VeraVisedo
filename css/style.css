@@ -97,19 +97,21 @@ i {
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 50px;
 }
 
 .banner__container {
-  padding: 20px;
+  width: 100%;
+  height: auto;
   text-align: center;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-  margin-top: 100px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.637);
+  margin-top: 140px;
 }
 
 .banner__container img {
+  background-color: rgba(0, 0, 0, 0.815);
   max-width: 100%;
   height: auto;
+  box-shadow: 0px 0px 30px 50px rgb(0, 0, 0, 0.815);
 }
 
 .capa {
@@ -125,87 +127,63 @@ i {
 /*Fin de Banner principal con logo*/
 
 /*section Bebidas CON alcohol*/
-
-.bebalc {
-  width: 90%;
-  display: grid;
-  grid-template-areas:
-    "titu__bebalc titu__bebalc titu__bebalc titu__bebalc titu__bebalc titu__bebalc"
-    "imag__bebalc imag__bebalc imag__bebalc imag__bebalc imag__bebalc imag__bebalc"
-    "imag__bebalc imag__bebalc imag__bebalc imag__bebalc imag__bebalc imag__bebalc";
-  grid-template-rows: 50px 350px 200px;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
-  background-color: rgb(0, 0, 0);
-  align-items: center;
-  margin: 70px;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 20px;
-  padding: 10px;
-  background-color: rgb(255, 72, 0);
+.container_bebalc {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 30px;
 }
 
-.titu__bebalc {
+.container_bebalc .card {
+  box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
+}
+
+.container_bebalc img {
+  width: 200px;
+  height: 440px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.container_bebalc img:hover {
+  transform: scale(1.1);
+  transition: transform 1s ease-in-out;
+}
+
+.container_bebalc .titu__bebalc {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.877);
-  grid-area: titu__bebalc;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  /* margin-left: 100px; */
   color: white;
   border-radius: 10px;
 }
-.titu__bebalc a {
+.container_bebalc .titu__bebalc a {
   text-decoration: none;
-  color: rgb(255, 72, 0);
-  border: 2px solid rgb(255, 72, 0);
-  background-color: rgb(0, 0, 0);
+  color: rgb(240, 54, 85);
+  border: 2px solid rgb(240, 54, 85);
   border-radius: 50px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
+  box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
 }
-
-.titu__bebalc a:hover {
-  background-color: rgb(255, 255, 255);
+.container_bebalc .titu__bebalc h2 {
+  box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
+  border-radius: 100px;
 }
-
-.imag__bebalc {
-  width: fit-content;
-  margin: 0 auto;
-  grid-area: imag__bebalc;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 5px;
-}
-
-.bebalc img {
-  width: 140px;
-  height: 270px;
-  margin: 40px;
-  border-radius: 10px;
-}
-
-.bebalc img:hover {
-  transform: scale(1.1);
+.container_bebalc .titu__bebalc h2:hover, h4:hover {
+  transform: scale(0.9);
   transition: transform 0.3s ease-in-out;
 }
+.container_bebalc .titu__bebalc i {
+  color: rgb(240, 54, 85);
+}
+.container_bebalc .titu__bebalc a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
 
-.bebalc .imag__bebalc li {
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 5px;
-  margin: 5px;
-  position: relative;
-  bottom: 5px;
-}
-.bebalc .imag__bebalc li:hover {
-  background-color: #ffffff;
-}
 /*Fin de section Bebidas Con alcohol*/
 
 /* Boton Agregar al Carrito para ambas bebidas */
@@ -227,91 +205,68 @@ i {
 /* Fin de Boton Agregar al Carrito para ambas bebidas */
 
 /*section Bebidas SIN alcohol*/
-
-.bebsinalc {
-  width: 90%;
-  display: grid;
-  grid-template-areas:
-    "titu__sinalc titu__sinalc titu__sinalc titu__sinalc titu__sinalc titu__sinalc"
-    "imag__sinalc imag__sinalc imag__sinalc imag__sinalc imag__sinalc imag__sinalc"
-    "imag__sinalc imag__sinalc imag__sinalc imag__sinalc imag__sinalc imag__sinalc";
-  grid-template-rows: 50px 350px 200px;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
-  background-color: rgb(0, 0, 0);
-  align-items: center;
-  margin: 70px;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 20px;
-  padding: 10px;
-  background-color: rgb(255, 72, 0);
+.container_bebsinalc {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 30px;
 }
 
-.titu__sinalc {
+.container_bebsinalc .card {
+  box-shadow: 0px 0px 10px 5px rgb(252, 149, 245);
+}
+
+.container_bebsinalc img {
+  width: 200px;
+  height: 440px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.container_bebsinalc img:hover {
+  transform: scale(1.1);
+  transition: transform 1s ease-in-out;
+}
+
+.container_bebsinalc .titu__sinalc {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.877);
-  grid-area: titu__sinalc;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  /* margin-left: 100px; */
   color: white;
   border-radius: 10px;
 }
-.titu__sinalc a {
+.container_bebsinalc .titu__sinalc a {
   text-decoration: none;
-  color: rgb(255, 72, 0);
-  border: 2px solid rgb(255, 72, 0);
-  background-color: rgb(0, 0, 0);
+  color: rgb(240, 54, 85);
+  border: 2px solid rgb(240, 54, 85);
   border-radius: 50px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
+  box-shadow: 0px 0px 10px 5px rgb(252, 149, 245);
 }
-
-.titu__sinalc a:hover {
-  background-color: rgb(255, 255, 255);
+.container_bebsinalc .titu__sinalc h2 {
+  box-shadow: 0px 0px 10px 5px rgb(252, 149, 245);
+  border-radius: 100px;
 }
-
-.imag__sinalc {
-  width: fit-content;
-  margin: 0 auto;
-  grid-area: imag__sinalc;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 5px;
-}
-
-.bebsinalc img {
-  width: 140px;
-  height: 270px;
-  margin: 40px;
-  border-radius: 10px;
-}
-
-.bebsinalc img:hover {
-  transform: scale(1.1);
+.container_bebsinalc .titu__sinalc h2:hover, h4:hover {
+  transform: scale(0.9);
   transition: transform 0.3s ease-in-out;
 }
+.container_bebsinalc .titu__sinalc i {
+  color: rgb(240, 54, 85);
+}
+.container_bebsinalc .titu__sinalc a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
 
-.bebsinalc .imag__sinalc li {
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 5px;
-  margin: 5px;
-  position: relative;
-  bottom: 5px;
-}
-.bebsinalc .imag__sinalc li:hover {
-  background-color: #ffffff;
-}
+
 /*Fin de section Bebidas SIN alcohol*/
 
 /*Sección Data*/
-#carouselExampleDark {
+.carousel {
   width: 100%;
   height: 100%;
 }
@@ -319,8 +274,6 @@ i {
   width: 100%;
   height: 100%;
   font-size: 60px;
-  font-family: var(--lg-font);
-  border-radius: 20px;
 }
 
 /*Fin de Sección Data*/
@@ -403,7 +356,7 @@ i {
 
 /* FIN DE INDEX */
 
-/* COMIENZO DE BEBIDAS CON/SIN ALCOHOL */
+/* COMIENZO DE PAGINAS BEBIDAS CON/SIN ALCOHOL */
 
 /* Encabezado */
 
@@ -751,7 +704,7 @@ i {
   line-height: 1.5;
 }
 
-/* FIN DE NOSOTROS */
+/* FIN DE PÁGINA NOSOTROS */
 
 /* MEDIA QUERIES */
 
@@ -780,6 +733,9 @@ i {
   .ofertas .email__container input[type="email"] {
     width: 120px;
     height: 30px;
+  }
+  .carousel-inner {
+    font-size: 40px;
   }
   /* fin index */
   /* comienzo paginas bebidas */
@@ -831,33 +787,12 @@ i {
   }
   /* fin  barra de navegacion */
   /* index */
-  .bebalc {
-    grid-template-areas:
-      "titu__bebalc titu__bebalc titu__bebalc"
-      "imag__bebalc imag__bebalc imag__bebalc"
-      "imag__bebalc imag__bebalc imag__bebalc";
-    grid-template-rows: 50px 350px 200px;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .bebsinalc {
-    grid-template-areas:
-      "titu__sinalc titu__sinalc titu__sinalc"
-      "imag__sinalc imag__sinalc imag__sinalc"
-      "imag__sinalc imag__sinalc imag__sinalc";
-    grid-template-rows: 50px 350px 200px;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .bebalc img,
-  .bebsinalc img {
-    width: 100px;
-    height: 150px;
-    margin: 20px;
-  }
-
   .agregar-al-carrito {
     padding: 3px 6px;
     font-size: 12px;
+  }
+  .carousel-inner {
+    font-size: 40px;
   }
   /* fin index */
   /* comienzo paginas bebidas */
@@ -892,11 +827,8 @@ i {
 
 @media screen and (max-width: 576px) {
   /* index */
-  .bebalc img,
-  .bebsinalc img {
-    width: 80px;
-    height: 120px;
-    margin: 10px;
+  .carousel-inner {
+    font-size: 30px;
   }
   /* fin index */
   /* comienzo paginas bebidas */
@@ -930,6 +862,11 @@ i {
 }
 
 @media screen and (max-width: 420px) {
+  /* index */
+  .carousel-inner {
+    font-size: 20px;
+  }
+  /* fin index */
   /* comienzo paginas bebidas */
   .headerbeb_titu {
     font-size: 10px;
