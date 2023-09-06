@@ -375,10 +375,6 @@ h4:hover {
 
 .header__bebidas {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   padding: 20px;
   margin-bottom: 50px;
@@ -510,10 +506,6 @@ h4:hover {
 /* Encabezado */
 .header__contacto {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   padding: 20px;
   margin-bottom: 50px;
@@ -622,10 +614,6 @@ h4:hover {
 /* Encabezado */
 .header__nosotros {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   padding: 20px;
   margin-bottom: 50px;
