@@ -1,0 +1,747 @@
+@import "./partials/fuentes";
+@import "./partials/variables";
+@import "./partials/reset";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background: url(../img/rojoraya.jpg);
+  background-size: cover;
+  width: $ancho;
+  height: 100vh;
+  background-position: center;
+}
+
+/* ALERTA */
+.alert {
+  display: $dFlex;
+  justify-content: space-around;
+  flex-direction: $dir-Flex;
+  text-align: center;
+  align-items: center;
+  button {
+    background-color: white;
+    border-radius: $radius;
+  }
+  strong {
+    color: $color-principal;
+  }
+}
+/* FIN DE ALERTA */
+
+/* Barra de Navegación*/
+.navbar {
+  box-shadow: 0 0 10px #000;
+  background: rgba(255, 255, 255, 0.5);
+
+  .navbar-brand {
+    img {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      bottom: 10px;
+    }
+    span {
+      color: $color-principal;
+      font-family: Heydex;
+      font-size: $font * 4;
+    }
+  }
+
+  i {
+    color: $color-principal;
+  }
+
+  .navbar-nav {
+    background-color: $bg-principal;
+    border-radius: $radius;
+    .nav-link {
+      color: $color-principal;
+    }
+  }
+
+  .nav-item {
+    &.active {
+      background: $bg-secundario;
+      border-radius: $radius;
+    }
+    &:hover {
+      border-bottom: 1px solid white;
+      background-color: $bg-terciario;
+      border-radius: $radius;
+    }
+  }
+
+  .search-and-icons {
+    background-color: $bg-principal;
+    border-radius: $radius;
+    .buscar__container {
+      display: none;
+      border-radius: $radius;
+      .form-control {
+        border-radius: $radius;
+      }
+      i {
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: $radius;
+      }
+    }
+    button[type="button"] {
+      &:hover {
+        border-bottom: 1px solid white;
+        background-color: $bg-terciario;
+        border-radius: $radius;
+      }
+    }
+  }
+}
+
+/*Fin de barra de navegacion*/
+
+/* COMIENZO DE INDEX */
+
+/*Banner principal con logo*/
+
+.banner__container {
+  width: $ancho;
+  height: auto;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.637);
+  margin-top: 140px;
+
+  video {
+    position: relative;
+    width: $ancho;
+    height: $altura;
+  }
+
+  img {
+    background-color: rgba(0, 0, 0, 0.815);
+    max-width: $ancho;
+    height: auto;
+    box-shadow: 0px 0px 30px 50px rgb(0, 0, 0, 0.815);
+  }
+
+  .capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 230%;
+    width: $ancho;
+    background-color: rgba(0, 0, 0, 0.236);
+    mix-blend-mode: overlay;
+  }
+}
+
+/*Fin de Banner principal con logo*/
+
+/*section Bebidas CON alcohol*/
+.container_bebalc {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 30px;
+
+  .card {
+    box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
+  }
+
+  img {
+    width: 200px;
+    height: 440px;
+    margin: auto;
+    margin-top: 50px;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 1s ease-in-out;
+    }
+  }
+
+  .titu__bebalc {
+    width: $ancho;
+    display: $dFlex;
+    flex-direction: $dir-Flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: $color-principal;
+    border-radius: $radius/5;
+
+    a {
+      text-decoration: none;
+      color: rgb(240, 54, 85);
+      border: 2px solid rgb(240, 54, 85);
+      border-radius: $radius;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: $font + 5;
+      box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
+
+      &:hover {
+        background-color: rgb(255, 255, 255);
+        color: $color-secundario;
+      }
+    }
+
+    h2 {
+      box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
+      border-radius: $radius * 2;
+
+      &:hover {
+        transform: scale(0.9);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+
+    h4 {
+      &:hover {
+        transform: scale(0.9);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+
+    i {
+      color: rgb(240, 54, 85);
+    }
+  }
+}
+
+/*Fin de section Bebidas Con alcohol*/
+
+/* Boton Agregar al Carrito para ambas bebidas */
+.agregar-al-carrito {
+  background-color: $bg-principal;
+  color: $color-secundario;
+  border: none;
+  border-radius: $radius/10;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-bottom: 20px;
+
+  &:hover {
+    background-color: $bg-terciario;
+  }
+}
+
+/* Fin de Boton Agregar al Carrito para ambas bebidas */
+
+/*section Bebidas SIN alcohol*/
+.container_bebsinalc {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 30px;
+
+  .card {
+    box-shadow: 0px 0px 10px 5px $bg-terciario;
+  }
+
+  img {
+    width: 200px;
+    height: 440px;
+    margin: auto;
+    margin-top: 50px;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 1s ease-in-out;
+    }
+  }
+
+  .titu__sinalc {
+    width: $ancho;
+    display: $dFlex;
+    flex-direction: $dir-Flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: $color-principal;
+    border-radius: $radius/5;
+
+    a {
+      text-decoration: none;
+      color: rgb(240, 54, 85);
+      border: 2px solid $bg-principal;
+      border-radius: 50px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: $font + 5;
+      box-shadow: 0px 0px 10px 5px $bg-terciario;
+
+      &:hover {
+        background-color: rgb(255, 255, 255);
+        color: $color-secundario;
+      }
+    }
+
+    h2 {
+      box-shadow: 0px 0px 10px 5px $bg-terciario;
+      border-radius: $radius * 2;
+
+      &:hover {
+        transform: scale(0.9);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+
+    h4 {
+      &:hover {
+        transform: scale(0.9);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+
+    i {
+      color: rgb(240, 54, 85);
+    }
+  }
+}
+
+/*Fin de section Bebidas SIN alcohol*/
+
+/*Sección Carrousel Data*/
+.carousel {
+  width: $ancho;
+  height: $altura;
+
+  .carousel-inner {
+    width: $ancho;
+    height: $altura;
+    font-size: $font * 6;
+  }
+}
+
+/*Fin de Sección Carrousel Data*/
+
+/*Seccion ofertas*/
+.ofertas {
+  display: $dFlex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-principal;
+  text-align: center;
+  margin: 100px;
+  gap: 10px;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+
+  .formulario {
+    width: $ancho;
+    padding: 10px;
+    background-color: rgb(253, 226, 230);
+    color: $color-secundario;
+  }
+
+  .email__container {
+    input[type="email"] {
+      border: 1px solid #ccc;
+      border-radius: $radius/10;
+      border-color: $bg-secundario;
+      outline-style: double;
+      width: 300px;
+      height: 30px;
+      padding: 5px 10px;
+    }
+  }
+
+  .form_control {
+    padding: 10px;
+
+    input[type="submit"] {
+      border: 1px solid #ccc;
+      border-radius: $radius/10;
+      border-color: rgb(0, 0, 0);
+      padding: 5px 10px;
+      width: 60px;
+      height: 30px;
+
+      &:hover {
+        background-color: $bg-principal;
+      }
+    }
+  }
+}
+/*Fin de Seccion ofertas*/
+
+/*Video marcas*/
+.videomarcas {
+  background-color: black;
+  margin-left: 800px;
+  margin-bottom: 50px;
+  padding: 10px;
+  border-radius: $radius 0px 0px $radius;
+
+  video {
+    position: relative;
+    width: $ancho*0.85;
+    border-radius: $radius;
+  }
+}
+
+/*Fin de video marcas*/
+
+/*Pie de página*/
+
+.footer__container {
+  text-align: center;
+
+  img {
+    width: $ancho*0.15;
+  }
+}
+
+/*Fin de Pie de página*/
+
+/* FIN DE INDEX */
+
+/* COMIENZO DE PAGINAS BEBIDAS CON/SIN ALCOHOL */
+
+/* Encabezado */
+
+.header__bebidas {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 50px;
+
+  .headerbeb_titu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: $font * 7;
+    color: $color-secundario;
+
+    i {
+      color: $color-secundario;
+    }
+  }
+
+  img {
+    width: $ancho*0.40;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 20px 20px 20px 20px rgba(39, 39, 39, 0.39);
+    margin-bottom: 20px;
+  }
+}
+
+/* Fin de Encabezado */
+
+/* Seccion de filtros */
+.filters__options {
+  width: $ancho;
+  display: $dFlex;
+  flex-direction: $dir-Flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: $radius*0.20;
+  padding: 20px;
+  box-shadow: 20px 20px 20px 20px rgb(39, 39, 39, 39);
+  list-style: none;
+  border-top: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
+
+  .filter__option {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-right: 1px solid #00000070;
+    border-bottom: 1px solid #00000070;
+    border-radius: $radius * 2;
+
+    &:hover {
+      background-color: $bg-secundario;
+      padding-left: 15px;
+      border-radius: $radius;
+    }
+
+    i {
+      color: $color-secundario;
+    }
+
+    .option__link {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+
+      &:hover {
+        color: $color-principal;
+        transition: color 0.1s;
+      }
+    }
+
+    .form-check {
+      .form-check-input {
+        font-size: $font * 2;
+        border-color: #000000;
+        cursor: pointer;
+      }
+
+      &:hover {
+        color: $color-principal;
+        transition: color 0.1s;
+      }
+    }
+  }
+}
+
+/* Fin de Seccion de filtros */
+/* Sección de productos */
+
+.container_bebidas {
+  padding: 30px;
+
+  img {
+    width: 200px;
+    height: 440px;
+    margin: auto;
+    margin-top: 50px;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 1s ease-in-out;
+    }
+  }
+}
+
+/* Fin de Sección de productos */
+/* Botón "Ver Más" */
+.view-more {
+  display: block;
+  position: relative;
+  background-color: $bg-principal;
+  color: $color-principal;
+  border: none;
+  border-radius: $radius/10;
+  padding: 10px 20px;
+  font-size: $font + 6;
+  text-align: center;
+  transition: background-color 0.3s;
+  margin: auto;
+  margin-bottom: 20px;
+
+  &:hover {
+    background-color: $bg-secundario;
+  }
+}
+
+/* Fin de Botón "Ver Más" */
+/* FIN DE BEBIDAS CON/SIN ALCOHOL */
+
+/* COMIENZO DE PAGINA CONTACTO */
+
+/* Encabezado */
+.header__contacto {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 50px;
+
+  .headercontac_titu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: $font * 7;
+    color: rgba(255, 255, 255, 0.473);
+
+    i {
+      color: rgba(255, 255, 255, 0.473);
+    }
+  }
+
+  img {
+    width: $ancho*0.40;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 20px 20px 20px 20px rgba(39, 39, 39, 0.39);
+    margin-bottom: 20px;
+  }
+}
+
+/* Fin de Encabezado */
+/* Información de contacto */
+.contact-info {
+  position: relative;
+  background-color: $bg-principal;
+  padding: 20px;
+  box-shadow: 20px 20px 20px 20px rgb(39, 39, 39, 39);
+  flex: 1;
+  text-align: center;
+  bottom: 200px;
+  margin-top: 300px;
+  color: $color-principal;
+
+  &:hover {
+    background-color: $bg-secundario;
+  }
+
+  .contact-info__title {
+    font-size: $font * 3;
+    margin-bottom: 20px;
+  }
+
+  .contact-info__item {
+    font-size: $font * 2;
+    margin-bottom: 10px;
+
+    i {
+      font-size: $font * 3;
+      color: $bg-terciario;
+    }
+  }
+
+  iframe {
+    border-radius: $radius/10 $radius * 100 $radius/10 $radius * 100;
+  }
+}
+
+/* Fin de Información de contacto */
+/* Formulario de contacto */
+.contact-form {
+  background-color: $bg-principal;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(2, 2, 2, 2);
+  margin: 100px;
+  flex: 1;
+  color: $color-principal;
+
+  &:hover {
+    background-color: $bg-secundario;
+  }
+
+  .contact-form__title {
+    font-size: $font + 14;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.253);
+  }
+
+  .form__button {
+    display: block;
+    position: relative;
+    background-color: $bg-terciario;
+    color: $color-principal;
+    border: none;
+    border-radius: $radius/10;
+    padding: 10px 20px;
+    font-size: $font + 6;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin: auto;
+    margin-bottom: 20px;
+
+    i {
+      margin-right: 5px;
+    }
+
+    &:hover {
+      background-color: #555;
+    }
+  }
+}
+
+/* Fin de Formulario de contacto */
+/* FIN DE PAGINA CONTACTO */
+
+/* COMIENZO DE PAGINA NOSOTROS */
+
+/* Encabezado */
+.header__nosotros {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border-radius: $radius * 8;
+
+  .headernos_titu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: $font * 7;
+    color: rgba(255, 255, 255, 0.473);
+
+    i {
+      color: rgba(255, 255, 255, 0.473);
+    }
+  }
+
+  img {
+    width: $ancho*0.40;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 20px 20px 20px 20px rgba(39, 39, 39, 0.39);
+    margin-bottom: 20px;
+  }
+}
+
+/* Fin de Encabezado */
+
+/* Contenedor principal */
+.main__nosotros {
+  display: $dFlex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Sección Nosotros */
+.about {
+  display: $dFlex;
+  align-items: center;
+  background-color: white;
+  border-radius: $radius*0.20;
+  padding: 20px;
+  box-shadow: 0px 10px 10px 10px rgba(39, 39, 39, 39);
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+  &:hover {
+    background-color: black;
+    color: $color-principal;
+  }
+
+  .about__video {
+    flex: 1;
+    margin-right: 20px;
+
+    video {
+      width: $ancho;
+      box-shadow: 0px 10px 30px 10px rgba(39, 39, 39, 39);
+      border-radius: $radius*0.40;
+    }
+
+    &.mob {
+      display: none;
+      margin-bottom: 30px;
+    }
+  }
+
+  .about__content {
+    flex: 2;
+    text-align: center;
+
+    .about__title {
+      font-size: $font + 14;
+      margin-bottom: 20px;
+    }
+
+    .about__text {
+      font-size: $font + 6;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+  }
+}
+
+/* FIN DE PÁGINA NOSOTROS */
+
+@import "./partials/queries";

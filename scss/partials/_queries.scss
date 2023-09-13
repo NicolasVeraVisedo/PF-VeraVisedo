@@ -1,0 +1,276 @@
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 960px) {
+    /* barra de navegacion */
+    .navbar {
+      letter-spacing: 0.1em;
+      .navbar-nav {
+        .nav-link {
+          padding: 0.5em 1em;
+        }
+      }
+  
+      .search-and-icons {
+        width: 40%;
+  
+        form {
+          flex: 1;
+        }
+      }
+    }
+  
+    /* fin  barra de navegacion */
+    /* index */
+    .videomarcas {
+      display: none;
+    }
+  
+    .banner__container {
+      .capa {
+        display: none;
+      }
+    }
+  
+    .ofertas {
+      .email__container {
+        input[type="email"] {
+          width: 120px;
+          height: 30px;
+        }
+      }
+    }
+    .carousel {
+      .carousel-inner {
+        font-size: 40px;
+      }
+    }
+  
+    /* fin index */
+    /* comienzo paginas bebidas */
+    .header__bebidas {
+      .headerbeb_titu {
+        font-size: 40px;
+      }
+    }
+  
+    .filters__options {
+      .form-check-input {
+        font-size: 14px;
+      }
+      .option__link,
+      .form-check-label {
+        font-size: 18px;
+      }
+    }
+  
+    /* fin paginas bebidas */
+    /* comienzo pagina contacto */
+    .header__contacto {
+      .headercontac_titu {
+        font-size: 40px;
+      }
+    }
+  
+    /* fin pagina contacto */
+    /* comienzo pagina nosotros */
+    .header__nosotros {
+      .headernos_titu {
+        font-size: 40px;
+      }
+    }
+    .about {
+      .about__video {
+        display: none;
+        &.mob {
+          display: block;
+        }
+      }
+    }
+  
+    /* fin pagina nosotros */
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* nav mobile */
+    /* barra de navegacion */
+    .navbar {
+      .navbar-brand {
+        img {
+          max-width: 7em;
+        }
+      }
+      .navbar-collapse {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+  
+        .search-and-icons {
+          width: 100%;
+          display: flex;
+          align-items: center;
+  
+          .buscar__container {
+            display: flex;
+          }
+  
+          #buscar__pantxl {
+            display: none;
+          }
+        }
+      }
+    }
+  
+    /* fin  barra de navegacion */
+    /* index */
+    .carousel {
+      .carousel-inner {
+        font-size: 40px;
+      }
+    }
+    /* fin index */
+    /* comienzo paginas bebidas */
+    .header__bebidas {
+      .headerbeb_titu {
+        font-size: 32px;
+      }
+    }
+  
+    .filters__options {
+      .option__link,
+      .form-check-label {
+        font-size: 14px;
+      }
+      .form-check-input {
+        font-size: 12px;
+      }
+    }
+    /* fin paginas bebidas */
+    /* comienzo pagina contacto */
+    .header__contacto {
+      .headercontac_titu {
+        font-size: 30px;
+      }
+    }
+    /* fin pagina contacto */
+    /* comienzo pagina nosotros */
+    .header__nosotros {
+      .headernos_titu {
+        font-size: 30px;
+      }
+    }
+    .about {
+      .about__video {
+        display: none;
+        &.mob {
+          display: block;
+        }
+      }
+    }
+  
+    /* fin pagina nosotros */
+  }
+  
+  @media screen and (max-width: 576px) {
+    /* index */
+    .carousel {
+      .carousel-inner {
+        font-size: 30px;
+      }
+    }
+    /* fin index */
+    /* comienzo paginas bebidas */
+    .header__bebidas {
+      .headerbeb_titu {
+        font-size: 25px;
+      }
+    }
+  
+    .filters__options {
+      .option__link,
+      .form-check-label {
+        font-size: 14px;
+      }
+  
+      .form-check-input {
+        font-size: 10px;
+      }
+    }
+    /* fin paginas bebidas */
+    /* comienzo pagina contacto */
+    .header__contacto {
+      .headercontac_titu {
+        font-size: 20px;
+      }
+    }
+    /* fin pagina contacto */
+    /* comienzo pagina nosotros */
+    .header__nosotros {
+      .headernos_titu {
+        font-size: 20px;
+      }
+    }
+    .about {
+      .about__video {
+        display: none;
+        &.mob {
+          display: block;
+        }
+      }
+    }
+  
+    /* fin pagina nosotros */
+  }
+  
+  @media screen and (max-width: 420px) {
+    /* index */
+    .carousel {
+      .carousel-inner {
+        font-size: 20px;
+      }
+    }
+  
+    /* fin index */
+    /* comienzo paginas bebidas */
+    .header__bebidas {
+      .headerbeb_titu {
+        font-size: 10px;
+      }
+    }
+  
+    .filters__options {
+      .option__link,
+      .form-check-label {
+        font-size: 14px;
+      }
+      .form-check-input {
+        font-size: 10px;
+      }
+    }
+    /* fin paginas bebidas */
+  
+    /* comienzo pagina contacto */
+    .header__contacto {
+      .headercontac_titu {
+        font-size: 10px;
+      }
+    }
+    /* fin pagina contacto */
+    /* comienzo pagina nosotros */
+    .header__nosotros {
+      .headernos_titu {
+        font-size: 10px;
+      }
+    }
+  
+    .about {
+      .about__video {
+        display: none;
+        &.mob {
+          display: block;
+        }
+      }
+    }
+  
+    /* fin pagina nosotros */
+  }
+  
