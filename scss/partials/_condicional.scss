@@ -1,0 +1,44 @@
+@if ($temporada== "backbar") {
+    .condicionaltemp {
+      background-image: url(/img/temporadas/backbar.jpg);
+      background-size: cover;
+      height: 1000px;
+    }
+  } @else if($temporada== "verano") {
+    .condicionaltemp {
+      background-image: url(/img/temporadas/verano.png);
+      background-size: cover;
+      height: 1000px;
+    }
+  } @else if($temporada== "invierno") {
+    .condicionaltemp {
+      background-image: url(/img/temporadas/invierno.jpg);
+      background-size: 100%;
+      height: 500px;
+    }
+  }@else if($temporada== "primavera") {
+    .condicionaltemp {
+      background-image: url(/img/temporadas/primavera.webp);
+      background-size: 100%;
+      height: 500px;
+    }
+  } @else if($temporada== "otoño") {
+    .condicionaltemp {
+      background-image: url(/img/temporadas/otoño.jpg);
+      background-size: cover;
+      height: 1000px;
+    }
+  } @else if($temporada== "cybermonday") {
+    .condicionaltemp {
+      background-image: url(/img/temporadas/cybermonday.jpg);
+      background-size: 100%;
+      height: 500px;
+    }
+  } @else if($temporada== "navidad") {
+    .condicionaltemp {
+      background-image: url(/img/temporadas/navidad.jpg);
+      background-size: 100%;
+      height: 1000px;
+    }
+  }
+  

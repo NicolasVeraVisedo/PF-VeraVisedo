@@ -1,6 +1,7 @@
 @import "./partials/fuentes";
 @import "./partials/variables";
 @import "./partials/reset";
+@import "./partials/condicional";
 
 html {
   scroll-behavior: smooth;
@@ -119,7 +120,7 @@ body {
     height: $altura;
   }
 
-  img {
+  .bebidasvarias {
     background-color: rgba(0, 0, 0, 0.815);
     max-width: $ancho;
     height: auto;
@@ -130,15 +131,25 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    height: 230%;
+    height: $altura * 2.3;
     width: $ancho;
     background-color: rgba(0, 0, 0, 0.236);
     mix-blend-mode: overlay;
   }
 }
-
 /*Fin de Banner principal con logo*/
-
+/*Banner de ofertas con condicional para diferentes temporadas*/
+.condicionaltemp {
+  display: flex;
+  align-items: center;
+  width: $ancho;
+  margin-top: 50px;
+  box-shadow: 0px 0px 30px 50px rgb(0, 0, 0, 0.815);
+  background-color: rgba(0, 0, 0, 0.815);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/*Fin de banner de ofertas para diferentes temporadas*/
 /*section Bebidas CON alcohol*/
 .container_bebalc {
   margin-top: 100px;
@@ -169,7 +180,7 @@ body {
     align-items: center;
     text-align: center;
     color: $color-principal;
-    border-radius: $radius/5;
+    border-radius: $radius * 0.2;
 
     a {
       text-decoration: none;
@@ -211,24 +222,6 @@ body {
 
 /*Fin de section Bebidas Con alcohol*/
 
-/* Boton Agregar al Carrito para ambas bebidas */
-.agregar-al-carrito {
-  background-color: $bg-principal;
-  color: $color-secundario;
-  border: none;
-  border-radius: $radius/10;
-  padding: 5px 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-  margin-bottom: 20px;
-
-  &:hover {
-    background-color: $bg-terciario;
-  }
-}
-
-/* Fin de Boton Agregar al Carrito para ambas bebidas */
-
 /*section Bebidas SIN alcohol*/
 .container_bebsinalc {
   margin-top: 100px;
@@ -259,7 +252,7 @@ body {
     align-items: center;
     text-align: center;
     color: $color-principal;
-    border-radius: $radius/5;
+    border-radius: $radius * 0.2;
 
     a {
       text-decoration: none;
@@ -338,7 +331,7 @@ body {
   .email__container {
     input[type="email"] {
       border: 1px solid #ccc;
-      border-radius: $radius/10;
+      border-radius: $radius * 0.1;
       border-color: $bg-secundario;
       outline-style: double;
       width: 300px;
@@ -352,7 +345,7 @@ body {
 
     input[type="submit"] {
       border: 1px solid #ccc;
-      border-radius: $radius/10;
+      border-radius: $radius * 0.1;
       border-color: rgb(0, 0, 0);
       padding: 5px 10px;
       width: 60px;
@@ -376,7 +369,7 @@ body {
 
   video {
     position: relative;
-    width: $ancho*0.85;
+    width: $ancho * 0.85;
     border-radius: $radius;
   }
 }
@@ -389,7 +382,7 @@ body {
   text-align: center;
 
   img {
-    width: $ancho*0.15;
+    width: $ancho * 0.15;
   }
 }
 
@@ -421,7 +414,7 @@ body {
   }
 
   img {
-    width: $ancho*0.40;
+    width: $ancho * 0.4;
     height: auto;
     border-radius: 50%;
     box-shadow: 20px 20px 20px 20px rgba(39, 39, 39, 0.39);
@@ -440,7 +433,7 @@ body {
   align-items: center;
   text-align: center;
   background-color: white;
-  border-radius: $radius*0.20;
+  border-radius: $radius * 0.2;
   padding: 20px;
   box-shadow: 20px 20px 20px 20px rgb(39, 39, 39, 39);
   list-style: none;
@@ -467,7 +460,7 @@ body {
     .option__link {
       text-decoration: none;
       color: #333;
-      font-size: 16px;
+      font-size: $font + 6;
 
       &:hover {
         color: $color-principal;
@@ -517,7 +510,7 @@ body {
   background-color: $bg-principal;
   color: $color-principal;
   border: none;
-  border-radius: $radius/10;
+  border-radius: $radius * 0.1;
   padding: 10px 20px;
   font-size: $font + 6;
   text-align: center;
@@ -556,7 +549,7 @@ body {
   }
 
   img {
-    width: $ancho*0.40;
+    width: $ancho * 0.4;
     height: auto;
     border-radius: 50%;
     box-shadow: 20px 20px 20px 20px rgba(39, 39, 39, 0.39);
@@ -597,7 +590,7 @@ body {
   }
 
   iframe {
-    border-radius: $radius/10 $radius * 100 $radius/10 $radius * 100;
+    border-radius: $radius * 0.1 $radius * 100 $radius * 0.1 $radius * 100;
   }
 }
 
@@ -628,7 +621,7 @@ body {
     background-color: $bg-terciario;
     color: $color-principal;
     border: none;
-    border-radius: $radius/10;
+    border-radius: $radius * 0.1;
     padding: 10px 20px;
     font-size: $font + 6;
     text-align: center;
@@ -674,7 +667,7 @@ body {
   }
 
   img {
-    width: $ancho*0.40;
+    width: $ancho * 0.4;
     height: auto;
     border-radius: 50%;
     box-shadow: 20px 20px 20px 20px rgba(39, 39, 39, 0.39);
@@ -697,7 +690,7 @@ body {
   display: $dFlex;
   align-items: center;
   background-color: white;
-  border-radius: $radius*0.20;
+  border-radius: $radius * 0.2;
   padding: 20px;
   box-shadow: 0px 10px 10px 10px rgba(39, 39, 39, 39);
   max-width: 1200px;
@@ -716,7 +709,7 @@ body {
     video {
       width: $ancho;
       box-shadow: 0px 10px 30px 10px rgba(39, 39, 39, 39);
-      border-radius: $radius*0.40;
+      border-radius: $radius * 0.4;
     }
 
     &.mob {
