@@ -374,10 +374,10 @@ body {
   color: #000000;
 }
 .header__bebidas img {
-  width: 40%;
+  width: 50%;
   height: auto;
-  border-radius: 50%;
-  box-shadow: 20px 20px 20px 20px rgba(39, 39, 39, 0.39);
+  border-radius: 5000px 5000px 5px 5px;
+  box-shadow: 0px 40px 30px 40px rgba(39, 39, 39, 0.781);
   margin-bottom: 20px;
 }
 
@@ -492,8 +492,8 @@ body {
 .header__contacto img {
   width: 40%;
   height: auto;
-  border-radius: 50%;
-  box-shadow: 20px 20px 20px 20px rgba(39, 39, 39, 0.39);
+  border-radius: 5000px 5000px 5px 5px;
+  box-shadow: 0px 40px 30px 40px rgba(39, 39, 39, 0.781);
   margin-bottom: 20px;
 }
 
@@ -595,8 +595,8 @@ body {
 .header__nosotros img {
   width: 40%;
   height: auto;
-  border-radius: 50%;
-  box-shadow: 20px 20px 20px 20px rgba(39, 39, 39, 0.39);
+  border-radius: 5000px 5000px 5px 5px;
+  box-shadow: 0px 40px 30px 40px rgba(39, 39, 39, 0.781);
   margin-bottom: 20px;
 }
 

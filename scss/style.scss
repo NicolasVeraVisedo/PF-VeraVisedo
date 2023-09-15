@@ -421,9 +421,9 @@ body {
   }
 
   img {
-    @include sizes($ancho * 0.4, auto);
-    border-radius: 50%;
-    box-shadow: 20px 20px 20px 20px rgba(39, 39, 39, 0.39);
+    @include sizes($ancho * 0.5, auto);
+    border-radius: $radius * 100 $radius * 100 $radius * 0.1 $radius * 0.1;
+    box-shadow: 0px 40px 30px 40px rgba(39, 39, 39, 0.781);
     margin-bottom: 20px;
   }
 }
@@ -555,8 +555,8 @@ body {
 
   img {
     @include sizes($ancho * 0.4, auto);
-    border-radius: 50%;
-    box-shadow: 20px 20px 20px 20px rgba(39, 39, 39, 0.39);
+    border-radius: $radius * 100 $radius * 100 $radius * 0.1 $radius * 0.1;
+    box-shadow: 0px 40px 30px 40px rgba(39, 39, 39, 0.781);
     margin-bottom: 20px;
   }
 }
@@ -672,8 +672,8 @@ body {
 
   img {
     @include sizes($ancho * 0.4, auto);
-    border-radius: 50%;
-    box-shadow: 20px 20px 20px 20px rgba(39, 39, 39, 0.39);
+    border-radius: $radius * 100 $radius * 100 $radius * 0.1 $radius * 0.1;
+    box-shadow: 0px 40px 30px 40px rgba(39, 39, 39, 0.781);
     margin-bottom: 20px;
   }
 }
