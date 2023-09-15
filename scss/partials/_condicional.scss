@@ -1,16 +1,16 @@
 @if ($temporada== "backbar") {
   .condicionaltemp {
-    background-image: url(../assets/img/temporadas/backbar.jpg);
+    background-image: url(../assets/img/temporadas/backbar.webp);
     height: 1000px;
   }
 } @else if($temporada== "verano") {
   .condicionaltemp {
-    background-image: url(../assets/img/temporadas/verano.png);
+    background-image: url(../assets/img/temporadas/verano.webp);
     height: 1000px;
   }
 } @else if($temporada== "invierno") {
   .condicionaltemp {
-    background-image: url(../assets/img/temporadas/invierno.jpg);
+    background-image: url(../assets/img/temporadas/invierno.webp);
     height: 500px;
   }
 } @else if($temporada== "primavera") {
@@ -20,17 +20,17 @@
   }
 } @else if($temporada== "otoño") {
   .condicionaltemp {
-    background-image: url(../assets/img/temporadas/otoño.jpg);
+    background-image: url(../assets/img/temporadas/otoño.webp);
     height: 1000px;
   }
 } @else if($temporada== "cybermonday") {
   .condicionaltemp {
-    background-image: url(../assets/img/temporadas/cybermonday.jpg);
+    background-image: url(../assets/img/temporadas/cybermonday.webp);
     height: 500px;
   }
 } @else if($temporada== "navidad") {
   .condicionaltemp {
-    background-image: url(../assets/img/temporadas/navidad.jpg);
+    background-image: url(../assets/img/temporadas/navidad.webp);
     height: 1000px;
   }
 }
