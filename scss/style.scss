@@ -2,6 +2,7 @@
 @import "./partials/variables";
 @import "./partials/reset";
 @import "./partials/condicional";
+@import "./partials/mixin";
 
 html {
   scroll-behavior: smooth;
@@ -11,8 +12,7 @@ body {
   font-family: Poppins, sans-serif;
   background: url(../img/rojoraya.jpg);
   background-size: cover;
-  width: $ancho;
-  height: 100vh;
+  @include sizes($ancho, 100vh);
   background-position: center;
 }
 
@@ -41,8 +41,7 @@ body {
   .navbar-brand {
     img {
       position: relative;
-      width: 40px;
-      height: 40px;
+      @include sizes(40px, 40px);
       bottom: 10px;
     }
     span {
@@ -108,16 +107,14 @@ body {
 /*Banner principal con logo*/
 
 .banner__container {
-  width: $ancho;
-  height: auto;
+  @include sizes($ancho, auto);
   text-align: center;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.637);
   margin-top: 140px;
 
   video {
     position: relative;
-    width: $ancho;
-    height: $altura;
+    @include sizes($ancho, $alto);
   }
 
   .bebidasvarias {
@@ -131,8 +128,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    height: $altura * 2.3;
-    width: $ancho;
+    @include sizes($ancho, $alto * 2.3);
     background-color: rgba(0, 0, 0, 0.236);
     mix-blend-mode: overlay;
   }
@@ -140,14 +136,14 @@ body {
 /*Fin de Banner principal con logo*/
 /*Banner de ofertas con condicional para diferentes temporadas*/
 .condicionaltemp {
-  display: flex;
-  align-items: center;
-  width: $ancho;
+  max-width: $ancho;
+  text-align: center;
   margin-top: 50px;
   box-shadow: 0px 0px 30px 50px rgb(0, 0, 0, 0.815);
   background-color: rgba(0, 0, 0, 0.815);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: 100%;
 }
 /*Fin de banner de ofertas para diferentes temporadas*/
 /*section Bebidas CON alcohol*/
@@ -155,14 +151,22 @@ body {
   margin-top: 100px;
   margin-bottom: 100px;
   padding: 30px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    $bg-secundario 0%,
+    $bg-principal 25%,
+    rgb(255, 255, 255) 50%,
+    $bg-principal 75%,
+    $bg-secundario 100%
+  );
 
   .card {
     box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
   }
 
   img {
-    width: 200px;
-    height: 440px;
+    @include sizes(200px, 440px);
     margin: auto;
     margin-top: 50px;
 
@@ -184,8 +188,8 @@ body {
 
     a {
       text-decoration: none;
-      color: rgb(240, 54, 85);
-      border: 2px solid rgb(240, 54, 85);
+      color: $color-principal;
+      border: 2px solid rgb(255, 255, 255);
       border-radius: $radius;
       font-family: Arial, Helvetica, sans-serif;
       font-size: $font + 5;
@@ -198,7 +202,7 @@ body {
     }
 
     h2 {
-      box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
+      box-shadow: 0px 10px 5px 0px rgb(255, 255, 255);
       border-radius: $radius * 2;
 
       &:hover {
@@ -215,7 +219,7 @@ body {
     }
 
     i {
-      color: rgb(240, 54, 85);
+      color: rgb(0, 0, 0);
     }
   }
 }
@@ -227,14 +231,21 @@ body {
   margin-top: 100px;
   margin-bottom: 100px;
   padding: 30px;
-
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    $bg-secundario 0%,
+    $bg-principal 25%,
+    rgb(0, 0, 0) 50%,
+    $bg-principal 75%,
+    $bg-secundario 100%
+  );
   .card {
-    box-shadow: 0px 0px 10px 5px $bg-terciario;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.897);
   }
 
   img {
-    width: 200px;
-    height: 440px;
+    @include sizes(200px, 440px);
     margin: auto;
     margin-top: 50px;
 
@@ -251,26 +262,26 @@ body {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    color: $color-principal;
+    color: $color-secundario;
     border-radius: $radius * 0.2;
 
     a {
       text-decoration: none;
-      color: rgb(240, 54, 85);
-      border: 2px solid $bg-principal;
-      border-radius: 50px;
+      color: $color-secundario;
+      border: 2px solid rgb(0, 0, 0);
+      border-radius: $radius;
       font-family: Arial, Helvetica, sans-serif;
       font-size: $font + 5;
-      box-shadow: 0px 0px 10px 5px $bg-terciario;
+      box-shadow: 0px 0px 10px 5px rgb(0, 0, 0);
 
       &:hover {
-        background-color: rgb(255, 255, 255);
-        color: $color-secundario;
+        background-color: rgb(0, 0, 0);
+        color: $color-principal;
       }
     }
 
     h2 {
-      box-shadow: 0px 0px 10px 5px $bg-terciario;
+      box-shadow: 0px 10px 5px 0px rgb(0, 0, 0);
       border-radius: $radius * 2;
 
       &:hover {
@@ -287,7 +298,7 @@ body {
     }
 
     i {
-      color: rgb(240, 54, 85);
+      color: rgb(255, 255, 255);
     }
   }
 }
@@ -296,12 +307,10 @@ body {
 
 /*Sección Carrousel Data*/
 .carousel {
-  width: $ancho;
-  height: $altura;
+  @include sizes($ancho, $alto);
 
   .carousel-inner {
-    width: $ancho;
-    height: $altura;
+    @include sizes($ancho, $alto);
     font-size: $font * 6;
   }
 }
@@ -334,8 +343,7 @@ body {
       border-radius: $radius * 0.1;
       border-color: $bg-secundario;
       outline-style: double;
-      width: 300px;
-      height: 30px;
+      @include sizes(300px, 30px);
       padding: 5px 10px;
     }
   }
@@ -348,8 +356,7 @@ body {
       border-radius: $radius * 0.1;
       border-color: rgb(0, 0, 0);
       padding: 5px 10px;
-      width: 60px;
-      height: 30px;
+      @include sizes(60px, 30px);
 
       &:hover {
         background-color: $bg-principal;
@@ -414,8 +421,7 @@ body {
   }
 
   img {
-    width: $ancho * 0.4;
-    height: auto;
+    @include sizes($ancho * 0.4, auto);
     border-radius: 50%;
     box-shadow: 20px 20px 20px 20px rgba(39, 39, 39, 0.39);
     margin-bottom: 20px;
@@ -490,8 +496,7 @@ body {
   padding: 30px;
 
   img {
-    width: 200px;
-    height: 440px;
+    @include sizes(200px, 440px);
     margin: auto;
     margin-top: 50px;
 
@@ -549,8 +554,7 @@ body {
   }
 
   img {
-    width: $ancho * 0.4;
-    height: auto;
+    @include sizes($ancho * 0.4, auto);
     border-radius: 50%;
     box-shadow: 20px 20px 20px 20px rgba(39, 39, 39, 0.39);
     margin-bottom: 20px;
@@ -667,8 +671,7 @@ body {
   }
 
   img {
-    width: $ancho * 0.4;
-    height: auto;
+    @include sizes($ancho * 0.4, auto);
     border-radius: 50%;
     box-shadow: 20px 20px 20px 20px rgba(39, 39, 39, 0.39);
     margin-bottom: 20px;
