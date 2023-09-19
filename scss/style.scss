@@ -91,6 +91,7 @@ body {
       }
     }
     button[type="button"] {
+      border-radius: $radius;
       &:hover {
         border-bottom: 1px solid white;
         background-color: $bg-terciario;
@@ -436,19 +437,18 @@ body {
   width: $ancho;
   display: $dFlex;
   flex-direction: $dir-Flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
   background-color: white;
-  border-radius: $radius * 0.2;
-  padding: 20px;
-  box-shadow: 20px 20px 20px 20px rgb(39, 39, 39, 39);
   list-style: none;
   border-top: 3px solid #ccc;
   border-bottom: 3px solid #ccc;
+  margin-top: 100px;
 
   .filter__option {
-    padding: 15px;
+    padding: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
     border-right: 1px solid #00000070;
     border-bottom: 1px solid #00000070;
@@ -456,8 +456,7 @@ body {
 
     &:hover {
       background-color: $bg-secundario;
-      padding-left: 15px;
-      border-radius: $radius;
+      color: $color-principal;
     }
 
     i {
@@ -478,13 +477,7 @@ body {
     .form-check {
       .form-check-input {
         font-size: $font * 2;
-        border-color: #000000;
         cursor: pointer;
-      }
-
-      &:hover {
-        color: $color-principal;
-        transition: color 0.1s;
       }
     }
   }
@@ -494,16 +487,13 @@ body {
 /* Sección de productos */
 
 .container_bebidas {
-  padding: 60px;
-  .card {
-    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.897);
-  }
+  padding: 30px;
 
   img {
     @include sizes(200px, 440px);
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 50px;
+
     &:hover {
       transform: scale(1.1);
       transition: transform 1s ease-in-out;
@@ -526,14 +516,13 @@ body {
   transition: background-color 0.3s;
   margin: auto;
   margin-bottom: 20px;
-  cursor: pointer;
+
   &:hover {
     background-color: $bg-secundario;
   }
 }
 
 /* Fin de Botón "Ver Más" */
-
 /* FIN DE BEBIDAS CON/SIN ALCOHOL */
 
 /* COMIENZO DE PAGINA CONTACTO */
@@ -593,8 +582,11 @@ body {
     margin-bottom: 10px;
 
     i {
+      background-color: white;
+      border-radius: 10px;
       font-size: $font * 3;
       color: $bg-terciario;
+      margin: 10px;
     }
   }
 

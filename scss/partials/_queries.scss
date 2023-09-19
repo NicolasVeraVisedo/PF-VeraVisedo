@@ -327,6 +327,7 @@
   }
 
   .filters__options {
+    flex-direction: column;
     .option__link,
     .form-check-label {
       font-size: 14px;
