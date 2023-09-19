@@ -128,7 +128,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    @include sizes($ancho, $alto * 2.3);
+    @include sizes($ancho, $alto * 3.8);
     background-color: rgba(0, 0, 0, 0.236);
     mix-blend-mode: overlay;
   }
@@ -146,17 +146,20 @@ body {
   background-size: 100%;
 }
 /*Fin de banner de ofertas para diferentes temporadas*/
+.titutienda {
+  font-family: Heydex;
+}
 /*section Bebidas CON alcohol*/
 .container_bebalc {
   margin-top: 100px;
   margin-bottom: 100px;
   padding: 30px;
-  background: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
     $bg-secundario 0%,
     $bg-principal 25%,
-    rgb(255, 255, 255) 50%,
+    rgb(0, 0, 0) 50%,
     $bg-principal 75%,
     $bg-secundario 100%
   );
@@ -185,6 +188,7 @@ body {
     text-align: center;
     color: $color-principal;
     border-radius: $radius * 0.2;
+    background-color: black;
 
     a {
       text-decoration: none;
@@ -194,7 +198,8 @@ body {
       font-family: Arial, Helvetica, sans-serif;
       font-size: $font + 5;
       box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
-
+      padding: 2px;
+      margin-right: 10px;
       &:hover {
         background-color: rgb(255, 255, 255);
         color: $color-secundario;
@@ -202,9 +207,6 @@ body {
     }
 
     h2 {
-      box-shadow: 0px 10px 5px 0px rgb(255, 255, 255);
-      border-radius: $radius * 2;
-
       &:hover {
         transform: scale(0.9);
         transition: transform 0.3s ease-in-out;
@@ -219,7 +221,7 @@ body {
     }
 
     i {
-      color: rgb(0, 0, 0);
+      color: $bg-principal;
     }
   }
 }
@@ -264,6 +266,7 @@ body {
     text-align: center;
     color: $color-secundario;
     border-radius: $radius * 0.2;
+    background-color: white;
 
     a {
       text-decoration: none;
@@ -273,7 +276,8 @@ body {
       font-family: Arial, Helvetica, sans-serif;
       font-size: $font + 5;
       box-shadow: 0px 0px 10px 5px rgb(0, 0, 0);
-
+      padding: 2px;
+      margin-right: 10px;
       &:hover {
         background-color: rgb(0, 0, 0);
         color: $color-principal;
@@ -281,9 +285,6 @@ body {
     }
 
     h2 {
-      box-shadow: 0px 10px 5px 0px rgb(0, 0, 0);
-      border-radius: $radius * 2;
-
       &:hover {
         transform: scale(0.9);
         transition: transform 0.3s ease-in-out;
@@ -298,7 +299,7 @@ body {
     }
 
     i {
-      color: rgb(255, 255, 255);
+      color: $bg-principal;
     }
   }
 }
@@ -493,13 +494,16 @@ body {
 /* Sección de productos */
 
 .container_bebidas {
-  padding: 30px;
+  padding: 60px;
+  .card {
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.897);
+  }
 
   img {
     @include sizes(200px, 440px);
     margin: auto;
     margin-top: 50px;
-
+    margin-bottom: 50px;
     &:hover {
       transform: scale(1.1);
       transition: transform 1s ease-in-out;
@@ -522,13 +526,14 @@ body {
   transition: background-color 0.3s;
   margin: auto;
   margin-bottom: 20px;
-
+  cursor: pointer;
   &:hover {
     background-color: $bg-secundario;
   }
 }
 
 /* Fin de Botón "Ver Más" */
+
 /* FIN DE BEBIDAS CON/SIN ALCOHOL */
 
 /* COMIENZO DE PAGINA CONTACTO */

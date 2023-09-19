@@ -132,7 +132,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 230%;
+  height: 380%;
   background-color: rgba(0, 0, 0, 0.236);
   mix-blend-mode: overlay;
 }
@@ -151,13 +151,17 @@ body {
 }
 
 /*Fin de banner de ofertas para diferentes temporadas*/
+.titutienda {
+  font-family: Heydex;
+}
+
 /*section Bebidas CON alcohol*/
 .container_bebalc {
   margin-top: 100px;
   margin-bottom: 100px;
   padding: 30px;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(0deg, rgb(255, 0, 43) 0%, rgb(255, 82, 111) 25%, rgb(255, 255, 255) 50%, rgb(255, 82, 111) 75%, rgb(255, 0, 43) 100%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(255, 0, 43) 0%, rgb(255, 82, 111) 25%, rgb(0, 0, 0) 50%, rgb(255, 82, 111) 75%, rgb(255, 0, 43) 100%);
 }
 .container_bebalc .card {
   box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
@@ -181,6 +185,7 @@ body {
   text-align: center;
   color: #ffffff;
   border-radius: 10px;
+  background-color: black;
 }
 .container_bebalc .titu__bebalc a {
   text-decoration: none;
@@ -190,14 +195,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
+  padding: 2px;
+  margin-right: 10px;
 }
 .container_bebalc .titu__bebalc a:hover {
   background-color: rgb(255, 255, 255);
   color: #000000;
-}
-.container_bebalc .titu__bebalc h2 {
-  box-shadow: 0px 10px 5px 0px rgb(255, 255, 255);
-  border-radius: 100px;
 }
 .container_bebalc .titu__bebalc h2:hover {
   transform: scale(0.9);
@@ -208,7 +211,7 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 .container_bebalc .titu__bebalc i {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 82, 111);
 }
 
 /*Fin de section Bebidas Con alcohol*/
@@ -242,6 +245,7 @@ body {
   text-align: center;
   color: #000000;
   border-radius: 10px;
+  background-color: white;
 }
 .container_bebsinalc .titu__sinalc a {
   text-decoration: none;
@@ -251,14 +255,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   box-shadow: 0px 0px 10px 5px rgb(0, 0, 0);
+  padding: 2px;
+  margin-right: 10px;
 }
 .container_bebsinalc .titu__sinalc a:hover {
   background-color: rgb(0, 0, 0);
   color: #ffffff;
-}
-.container_bebsinalc .titu__sinalc h2 {
-  box-shadow: 0px 10px 5px 0px rgb(0, 0, 0);
-  border-radius: 100px;
 }
 .container_bebsinalc .titu__sinalc h2:hover {
   transform: scale(0.9);
@@ -269,7 +271,7 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 .container_bebsinalc .titu__sinalc i {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 82, 111);
 }
 
 /*Fin de section Bebidas SIN alcohol*/
@@ -435,13 +437,17 @@ body {
 /* Fin de Seccion de filtros */
 /* Sección de productos */
 .container_bebidas {
-  padding: 30px;
+  padding: 60px;
+}
+.container_bebidas .card {
+  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.897);
 }
 .container_bebidas img {
   width: 200px;
   height: 440px;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 .container_bebidas img:hover {
   transform: scale(1.1);
@@ -463,6 +469,7 @@ body {
   transition: background-color 0.3s;
   margin: auto;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .view-more:hover {
   background-color: rgb(255, 0, 43);
