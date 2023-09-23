@@ -16,23 +16,6 @@ body {
   background-position: center;
 }
 
-/* ALERTA */
-.alert {
-  display: $dFlex;
-  justify-content: space-around;
-  flex-direction: $dir-Flex;
-  text-align: center;
-  align-items: center;
-  button {
-    background-color: white;
-    border-radius: $radius;
-  }
-  strong {
-    color: $color-principal;
-  }
-}
-/* FIN DE ALERTA */
-
 /* Barra de Navegación*/
 .navbar {
   box-shadow: 0 0 10px #000;
@@ -113,9 +96,32 @@ body {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.637);
   margin-top: 140px;
 
+  /* ALERTA */
+
+  .alert {
+    display: $dFlex;
+    justify-content: space-around;
+    flex-direction: $dir-Flex;
+    text-align: center;
+    align-items: center;
+    background-color: $bg-secundario;
+    border: 8px solid rgba(0, 0, 0, 0.514);
+
+    button {
+      background-color: white;
+      border-radius: $radius;
+    }
+    strong {
+      color: $color-principal;
+    }
+  }
+
+  /* FIN DE ALERTA */
+
   video {
     position: relative;
     @include sizes($ancho, $alto);
+    filter: contrast(110%);
   }
 
   .bebidasvarias {
@@ -166,7 +172,26 @@ body {
   );
 
   .card {
-    box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.897);
+    &:hover {
+      transform: scale(0.995);
+      transition: transform 0.3s ease-in-out;
+    }
+    .card-body {
+      .btn {
+        background-color: $bg-principal;
+        &:hover {
+          transform: scale(1.05);
+          transition: transform 0.3s ease-in-out;
+        }
+      }
+
+      .btn-group {
+        .btn {
+          background-color: $bg-terciario;
+        }
+      }
+    }
   }
 
   img {
@@ -245,6 +270,25 @@ body {
   );
   .card {
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.897);
+    &:hover {
+      transform: scale(0.995);
+      transition: transform 0.3s ease-in-out;
+    }
+    .card-body {
+      .btn {
+        background-color: $bg-principal;
+        &:hover {
+          transform: scale(1.05);
+          transition: transform 0.3s ease-in-out;
+        }
+      }
+
+      .btn-group {
+        .btn {
+          background-color: $bg-terciario;
+        }
+      }
+    }
   }
 
   img {
@@ -408,19 +452,42 @@ body {
   text-align: center;
   padding: 20px;
   margin-bottom: 50px;
+  margin-top: 140px;
 
   .headerbeb_titu {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: $font * 7;
-    color: $color-secundario;
+    color: rgba(0, 0, 0, 0.637);
 
     i {
-      color: $color-secundario;
+      color: rgba(0, 0, 0, 0.637);
     }
   }
+
+  /* ALERTA */
+
+  .alert {
+    display: $dFlex;
+    justify-content: space-around;
+    flex-direction: $dir-Flex;
+    text-align: center;
+    align-items: center;
+    background-color: $bg-secundario;
+    border: 8px solid rgba(0, 0, 0, 0.514);
+
+    button {
+      background-color: white;
+      border-radius: $radius;
+    }
+    strong {
+      color: $color-principal;
+    }
+  }
+
+  /* FIN DE ALERTA */
 
   img {
     @include sizes($ancho * 0.5, auto);
@@ -489,10 +556,36 @@ body {
 .container_bebidas {
   padding: 30px;
 
+  .card {
+    &:hover {
+      transform: scale(0.98);
+      transition: transform 0.3s ease-in-out;
+    }
+    .card-body {
+      .btn {
+        background-color: $bg-principal;
+        &:hover {
+          color: $color-principal;
+        }
+        &:hover {
+          transform: scale(1.1);
+          transition: transform 0.3s ease-in-out;
+        }
+      }
+
+      .btn-group {
+        .btn {
+          background-color: $bg-terciario;
+        }
+      }
+    }
+  }
+
   img {
     @include sizes(200px, 440px);
     margin: auto;
     margin-top: 50px;
+    margin-bottom: 50px;
 
     &:hover {
       transform: scale(1.1);
@@ -533,6 +626,7 @@ body {
   text-align: center;
   padding: 20px;
   margin-bottom: 50px;
+  margin-top: 140px;
 
   .headercontac_titu {
     position: absolute;
@@ -552,6 +646,7 @@ body {
     border-radius: $radius * 100 $radius * 100 $radius * 0.1 $radius * 0.1;
     box-shadow: 0px 40px 30px 40px rgba(39, 39, 39, 0.781);
     margin-bottom: 20px;
+    filter: contrast(120%);
   }
 }
 
@@ -658,6 +753,7 @@ body {
   margin-bottom: 50px;
   margin-top: 50px;
   border-radius: $radius * 8;
+  margin-top: 140px;
 
   .headernos_titu {
     position: absolute;

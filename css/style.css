@@ -32,23 +32,6 @@ body {
   background-position: center;
 }
 
-/* ALERTA */
-.alert {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-}
-.alert button {
-  background-color: white;
-  border-radius: 50px;
-}
-.alert strong {
-  color: #ffffff;
-}
-
-/* FIN DE ALERTA */
 /* Barra de Navegación*/
 .navbar {
   box-shadow: 0 0 10px #000;
@@ -118,11 +101,30 @@ body {
   text-align: center;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.637);
   margin-top: 140px;
+  /* ALERTA */
+  /* FIN DE ALERTA */
+}
+.banner__container .alert {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(255, 0, 43);
+  border: 8px solid rgba(0, 0, 0, 0.514);
+}
+.banner__container .alert button {
+  background-color: white;
+  border-radius: 50px;
+}
+.banner__container .alert strong {
+  color: #ffffff;
 }
 .banner__container video {
   position: relative;
   width: 100%;
   height: 100%;
+  filter: contrast(110%);
 }
 .banner__container .bebidasvarias {
   background-color: rgba(0, 0, 0, 0.815);
@@ -167,7 +169,21 @@ body {
   background: linear-gradient(0deg, rgb(255, 0, 43) 0%, rgb(255, 82, 111) 25%, rgb(0, 0, 0) 50%, rgb(255, 82, 111) 75%, rgb(255, 0, 43) 100%);
 }
 .container_bebalc .card {
-  box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.897);
+}
+.container_bebalc .card:hover {
+  transform: scale(0.995);
+  transition: transform 0.3s ease-in-out;
+}
+.container_bebalc .card .card-body .btn {
+  background-color: rgb(255, 82, 111);
+}
+.container_bebalc .card .card-body .btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+.container_bebalc .card .card-body .btn-group .btn {
+  background-color: rgb(252, 149, 245);
 }
 .container_bebalc img {
   width: 200px;
@@ -228,6 +244,20 @@ body {
 }
 .container_bebsinalc .card {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.897);
+}
+.container_bebsinalc .card:hover {
+  transform: scale(0.995);
+  transition: transform 0.3s ease-in-out;
+}
+.container_bebsinalc .card .card-body .btn {
+  background-color: rgb(255, 82, 111);
+}
+.container_bebsinalc .card .card-body .btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+.container_bebsinalc .card .card-body .btn-group .btn {
+  background-color: rgb(252, 149, 245);
 }
 .container_bebsinalc img {
   width: 200px;
@@ -366,17 +396,36 @@ body {
   text-align: center;
   padding: 20px;
   margin-bottom: 50px;
+  margin-top: 140px;
+  /* ALERTA */
+  /* FIN DE ALERTA */
 }
 .header__bebidas .headerbeb_titu {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 70px;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.637);
 }
 .header__bebidas .headerbeb_titu i {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.637);
+}
+.header__bebidas .alert {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(255, 0, 43);
+  border: 8px solid rgba(0, 0, 0, 0.514);
+}
+.header__bebidas .alert button {
+  background-color: white;
+  border-radius: 50px;
+}
+.header__bebidas .alert strong {
+  color: #ffffff;
 }
 .header__bebidas img {
   width: 50%;
@@ -435,11 +484,29 @@ body {
 .container_bebidas {
   padding: 30px;
 }
+.container_bebidas .card:hover {
+  transform: scale(0.98);
+  transition: transform 0.3s ease-in-out;
+}
+.container_bebidas .card .card-body .btn {
+  background-color: rgb(255, 82, 111);
+}
+.container_bebidas .card .card-body .btn:hover {
+  color: #ffffff;
+}
+.container_bebidas .card .card-body .btn:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+.container_bebidas .card .card-body .btn-group .btn {
+  background-color: rgb(252, 149, 245);
+}
 .container_bebidas img {
   width: 200px;
   height: 440px;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 .container_bebidas img:hover {
   transform: scale(1.1);
@@ -475,6 +542,7 @@ body {
   text-align: center;
   padding: 20px;
   margin-bottom: 50px;
+  margin-top: 140px;
 }
 .header__contacto .headercontac_titu {
   position: absolute;
@@ -493,6 +561,7 @@ body {
   border-radius: 5000px 5000px 5px 5px;
   box-shadow: 0px 40px 30px 40px rgba(39, 39, 39, 0.781);
   margin-bottom: 20px;
+  filter: contrast(120%);
 }
 
 /* Fin de Encabezado */
@@ -586,6 +655,7 @@ body {
   margin-bottom: 50px;
   margin-top: 50px;
   border-radius: 400px;
+  margin-top: 140px;
 }
 .header__nosotros .headernos_titu {
   position: absolute;
@@ -828,7 +898,11 @@ body {
   /* fin index */
   /* comienzo paginas bebidas */
   .header__bebidas .headerbeb_titu {
-    font-size: 10px;
+    font-size: 18px;
+    top: 78%;
+  }
+  .header__bebidas .headerbeb_titu h1 {
+    font-size: 18px;
   }
   .filters__options {
     flex-direction: column;
