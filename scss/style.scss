@@ -4,9 +4,9 @@
 @import "./partials/condicional";
 @import "./partials/mixin";
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   font-family: Poppins, sans-serif;
@@ -69,14 +69,14 @@ body {
       }
       i {
         padding: 10px;
-        border: 2px solid white;
+        border: 2px solid $color-principal;
         border-radius: $radius;
       }
     }
     button[type="button"] {
       border-radius: $radius;
       &:hover {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid $color-principal;
         background-color: $bg-terciario;
         border-radius: $radius;
       }
@@ -108,7 +108,7 @@ body {
     border: 8px solid rgba(0, 0, 0, 0.514);
 
     button {
-      background-color: white;
+      background-color: $color-principal;
       border-radius: $radius;
     }
     strong {
@@ -161,12 +161,12 @@ body {
   margin-top: 100px;
   margin-bottom: 100px;
   padding: 30px;
-  background: rgb(0, 0, 0);
+  background: $color-secundario;
   background: linear-gradient(
     0deg,
     $bg-secundario 0%,
     $bg-principal 25%,
-    rgb(0, 0, 0) 50%,
+    $color-secundario 50%,
     $bg-principal 75%,
     $bg-secundario 100%
   );
@@ -214,20 +214,20 @@ body {
     text-align: center;
     color: $color-principal;
     border-radius: $radius * 0.2;
-    background-color: black;
+    background-color: $color-secundario;
 
     a {
       text-decoration: none;
       color: $color-principal;
-      border: 2px solid rgb(255, 255, 255);
+      border: 2px solid $color-principal;
       border-radius: $radius;
       font-family: Arial, Helvetica, sans-serif;
       font-size: $font + 5;
-      box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
+      box-shadow: 0px 0px 10px 5px $color-principal;
       padding: 2px;
       margin-right: 10px;
       &:hover {
-        background-color: rgb(255, 255, 255);
+        background-color: $color-principal;
         color: $color-secundario;
       }
     }
@@ -259,12 +259,12 @@ body {
   margin-top: 100px;
   margin-bottom: 100px;
   padding: 30px;
-  background: rgb(0, 0, 0);
+  background: $color-secundario;
   background: linear-gradient(
     0deg,
     $bg-secundario 0%,
     $bg-principal 25%,
-    rgb(0, 0, 0) 50%,
+    $color-secundario 50%,
     $bg-principal 75%,
     $bg-secundario 100%
   );
@@ -311,20 +311,20 @@ body {
     text-align: center;
     color: $color-secundario;
     border-radius: $radius * 0.2;
-    background-color: white;
+    background-color: $color-principal;
 
     a {
       text-decoration: none;
       color: $color-secundario;
-      border: 2px solid rgb(0, 0, 0);
+      border: 2px solid $color-secundario;
       border-radius: $radius;
       font-family: Arial, Helvetica, sans-serif;
       font-size: $font + 5;
-      box-shadow: 0px 0px 10px 5px rgb(0, 0, 0);
+      box-shadow: 0px 0px 10px 5px $color-secundario;
       padding: 2px;
       margin-right: 10px;
       &:hover {
-        background-color: rgb(0, 0, 0);
+        background-color: $color-secundario;
         color: $color-principal;
       }
     }
@@ -363,7 +363,7 @@ body {
 
 /*Fin de Sección Carrousel Data*/
 
-/*Seccion ofertas*/
+/*Sección ofertas*/
 .ofertas {
   display: $dFlex;
   flex-direction: column;
@@ -374,7 +374,7 @@ body {
   margin: 100px;
   gap: 10px;
   padding: 20px;
-  background-color: rgb(0, 0, 0);
+  background-color: $color-secundario;
 
   .formulario {
     width: $ancho;
@@ -398,19 +398,18 @@ body {
     padding: 10px;
 
     input[type="submit"] {
-      border: 1px solid #ccc;
-      border-radius: $radius * 0.1;
-      border-color: rgb(0, 0, 0);
-      padding: 5px 10px;
+      border: 1px solid $color-secundario;
+      border-radius: $radius * 0.5;
       @include sizes(60px, 30px);
-
+      background-color: $bg-principal;
+      color: $color-principal;
       &:hover {
-        background-color: $bg-principal;
+        background-color: $bg-secundario;
       }
     }
   }
 }
-/*Fin de Seccion ofertas*/
+/*Fin de Sección ofertas*/
 
 /*Video marcas*/
 .videomarcas {
@@ -428,8 +427,9 @@ body {
 }
 
 /*Fin de video marcas*/
+/* FIN DE INDEX */
 
-/*Pie de página*/
+/*Pie de página para Index, Bebidas con/sin alcohol, Nosotros, Contacto*/
 
 .footer__container {
   text-align: center;
@@ -437,13 +437,21 @@ body {
   img {
     width: $ancho * 0.15;
   }
+
+  a {
+    color: $color-principal;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
-/*Fin de Pie de página*/
+/*Fin de Pie de página para Index, Bebidas con/sin alcohol, Nosotros, Contacto*/
 
-/* FIN DE INDEX */
-
-/* COMIENZO DE PAGINAS BEBIDAS CON/SIN ALCOHOL */
+/* COMIENZO DE PÁGINAS BEBIDAS CON/SIN ALCOHOL */
 
 /* Encabezado */
 
@@ -479,7 +487,7 @@ body {
     border: 8px solid rgba(0, 0, 0, 0.514);
 
     button {
-      background-color: white;
+      background-color: $color-principal;
       border-radius: $radius;
     }
     strong {
@@ -499,7 +507,7 @@ body {
 
 /* Fin de Encabezado */
 
-/* Seccion de filtros */
+/* Sección de filtros */
 .filters__options {
   width: $ancho;
   display: $dFlex;
@@ -507,7 +515,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  background-color: white;
+  background-color: $color-principal;
   list-style: none;
   border-top: 3px solid #ccc;
   border-bottom: 3px solid #ccc;
@@ -550,7 +558,7 @@ body {
   }
 }
 
-/* Fin de Seccion de filtros */
+/* Fin de Sección de filtros */
 /* Sección de productos */
 
 .container_bebidas {
@@ -616,9 +624,9 @@ body {
 }
 
 /* Fin de Botón "Ver Más" */
-/* FIN DE BEBIDAS CON/SIN ALCOHOL */
+/* FIN DE PÁGINAS DE BEBIDAS CON/SIN ALCOHOL */
 
-/* COMIENZO DE PAGINA CONTACTO */
+/* COMIENZO DE PÁGINA CONTACTO */
 
 /* Encabezado */
 .header__contacto {
@@ -713,7 +721,7 @@ body {
   }
 
   .form-control {
-    border-color: #000;
+    border-color: $color-secundario;
   }
 
   .form__button {
@@ -741,9 +749,9 @@ body {
 }
 
 /* Fin de Formulario de contacto */
-/* FIN DE PAGINA CONTACTO */
+/* FIN DE PÁGINA CONTACTO */
 
-/* COMIENZO DE PAGINA NOSOTROS */
+/* COMIENZO DE PÁGINA NOSOTROS */
 
 /* Encabezado */
 .header__nosotros {
@@ -790,7 +798,7 @@ body {
 .about {
   display: $dFlex;
   align-items: center;
-  background-color: white;
+  background-color: $color-principal;
   border-radius: $radius * 0.2;
   padding: 20px;
   box-shadow: 0px 10px 10px 10px rgba(39, 39, 39, 39);
@@ -799,7 +807,7 @@ body {
   margin-bottom: 50px;
 
   &:hover {
-    background-color: black;
+    background-color: $color-secundario;
     color: $color-principal;
   }
 
@@ -837,5 +845,168 @@ body {
 }
 
 /* FIN DE PÁGINA NOSOTROS */
+
+/********* PÁGINA ERROR 404 *********/
+
+.body-404 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../assets/img/error404.webp");
+}
+
+.error-message {
+  display: $dFlex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include sizes($ancho, calc(100vh - 100px));
+
+  .error-message__container {
+    text-align: center;
+    color: $color-principal;
+
+    h1 {
+      font-size: $font * 6;
+      margin: 0px;
+    }
+
+    p {
+      font-size: $font * 1.8;
+    }
+
+    .animated {
+      animation: bounce 1.5s infinite both;
+    }
+  }
+
+  a {
+    background-color: $bg-principal;
+
+    &:hover {
+      background-color: $bg-secundario;
+    }
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/********* FIN DE PÁGINA ERROR 404 *********/
+
+/********* FOOTER INICIO SESIÓN, ERROR 404 Y REGISTRO USER *********/
+.footer-2 {
+  display: $dFlex;
+  align-items: center;
+  min-height: 100px;
+  width: 100%;
+
+  a {
+    color: $color-principal;
+    cursor: pointer;
+    font-size: $font * 1.4;
+    padding-left: 30px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/********* FIN DE FOOTER INICIO SESIÓN, ERROR 404 Y REGISTRO USER *********/
+
+/********* PÁGINAS INICIO SESIÓN / REGISTRO DE USUARIO *********/
+.body-log {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../assets/img/user.webp");
+}
+
+.log {
+  @include sizes($ancho, calc(100vh - 100px));
+  position: relative;
+
+  .form-log {
+    @include sizes(400px, 400px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 121, 143, 0.842);
+    box-shadow: 7px 13px 37px rgba(255, 121, 143, 0.842);
+    padding: 20px 30px;
+    border-top: 4px solid $color-principal;
+    color: $color-principal;
+    border-radius: $radius;
+
+    h5 {
+      margin: 0;
+      text-align: center;
+      height: 40px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid;
+      font-size: $font * 2;
+    }
+
+    .controls {
+      width: 100%;
+      border: 1px solid $color-secundario;
+      margin-bottom: 15px;
+      padding: 11px 10px;
+      background: $color-principal;
+      font-size: $font * 1.4;
+      font-weight: bold;
+    }
+
+    .buttons {
+      @include sizes($ancho, 40px);
+      background: $bg-secundario;
+      border: none;
+      color: $color-principal;
+      margin-bottom: 16px;
+      &:hover {
+        background: $bg-terciario;
+        color: $color-secundario;
+      }
+    }
+
+    p {
+      height: 40px;
+      text-align: center;
+      border-bottom: 1px solid;
+
+      a {
+        color: $color-principal;
+        text-decoration: none;
+        font-size: $font * 1.4;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+/********* FIN DE PÁGINAS INICIO SESIÓN / REGISTRO DE USUARIO *********/
 
 @import "./partials/queries";

@@ -1,7 +1,7 @@
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 960px) {
-  /* barra de navegacion */
+  /* barra de navegación */
   .navbar {
     letter-spacing: 0.1em;
     .navbar-nav {
@@ -11,7 +11,7 @@
     }
 
     .search-and-icons {
-      width: 40%;
+      width: $ancho * 0.4;
 
       form {
         flex: 1;
@@ -19,7 +19,7 @@
     }
   }
 
-  /* fin  barra de navegacion */
+  /* fin  barra de navegación */
   /* index */
   .videomarcas {
     display: none;
@@ -34,14 +34,14 @@
   .ofertas {
     .email__container {
       input[type="email"] {
-        width: 120px;
-        height: 30px;
+        @include sizes(120px, 30px);
+        font-size: $font * 1.3;
       }
     }
   }
   .carousel {
     .carousel-inner {
-      font-size: 40px;
+      font-size: $font * 4;
     }
   }
 
@@ -76,36 +76,36 @@
   }
 
   /* fin index */
-  /* comienzo paginas bebidas */
+  /* comienzo páginas bebidas */
   .header__bebidas {
     .headerbeb_titu {
-      font-size: 40px;
+      font-size: $font * 4;
     }
   }
 
   .filters__options {
     .form-check-input {
-      font-size: 14px;
+      font-size: $font * 1.4;
     }
     .option__link,
     .form-check-label {
-      font-size: 18px;
+      font-size: $font * 1.8;
     }
   }
 
-  /* fin paginas bebidas */
-  /* comienzo pagina contacto */
+  /* fin páginas bebidas */
+  /* comienzo página contacto */
   .header__contacto {
     .headercontac_titu {
-      font-size: 40px;
+      font-size: $font * 4;
     }
   }
 
-  /* fin pagina contacto */
-  /* comienzo pagina nosotros */
+  /* fin página contacto */
+  /* comienzo página nosotros */
   .header__nosotros {
     .headernos_titu {
-      font-size: 40px;
+      font-size: $font * 4;
     }
   }
   .about {
@@ -117,12 +117,12 @@
     }
   }
 
-  /* fin pagina nosotros */
+  /* fin página nosotros */
 }
 
 @media screen and (max-width: 768px) {
   /* nav mobile */
-  /* barra de navegacion */
+  /* barra de navegación */
   .navbar {
     .navbar-brand {
       img {
@@ -130,17 +130,17 @@
       }
     }
     .navbar-collapse {
-      display: flex;
+      display: $dFlex;
       flex-direction: column-reverse;
       align-items: flex-end;
 
       .search-and-icons {
-        width: 100%;
-        display: flex;
+        width: $ancho;
+        display: $dFlex;
         align-items: center;
 
         .buscar__container {
-          display: flex;
+          display: $dFlex;
         }
 
         #buscar__pantxl {
@@ -149,7 +149,7 @@
       }
     }
   }
-  /* fin  barra de navegacion */
+  /* fin  barra de navegación */
   /* index */
   @if ($temporada== "backbar") {
     .condicionaltemp {
@@ -183,38 +183,45 @@
 
   .carousel {
     .carousel-inner {
-      font-size: 40px;
+      font-size: $font * 4;
+    }
+  }
+  .ofertas {
+    .email__container {
+      input[type="email"] {
+        font-size: $font * 1.3;
+      }
     }
   }
   /* fin index */
-  /* comienzo paginas bebidas */
+  /* comienzo páginas bebidas */
   .header__bebidas {
     .headerbeb_titu {
-      font-size: 32px;
+      font-size: $font * 3.2;
     }
   }
 
   .filters__options {
     .option__link,
     .form-check-label {
-      font-size: 14px;
+      font-size: $font * 1.4;
     }
     .form-check-input {
-      font-size: 12px;
+      font-size: $font * 1.2;
     }
   }
-  /* fin paginas bebidas */
-  /* comienzo pagina contacto */
+  /* fin páginas bebidas */
+  /* comienzo página contacto */
   .header__contacto {
     .headercontac_titu {
-      font-size: 30px;
+      font-size: $font * 3;
     }
   }
-  /* fin pagina contacto */
-  /* comienzo pagina nosotros */
+  /* fin página contacto */
+  /* comienzo página nosotros */
   .header__nosotros {
     .headernos_titu {
-      font-size: 30px;
+      font-size: $font * 3;
     }
   }
   .about {
@@ -226,46 +233,46 @@
     }
   }
 
-  /* fin pagina nosotros */
+  /* fin página nosotros */
 }
 
 @media screen and (max-width: 576px) {
   /* index */
   .carousel {
     .carousel-inner {
-      font-size: 30px;
+      font-size: $font * 3;
     }
   }
   /* fin index */
-  /* comienzo paginas bebidas */
+  /* comienzo páginas bebidas */
   .header__bebidas {
     .headerbeb_titu {
-      font-size: 25px;
+      font-size: $font * 2.5;
     }
   }
 
   .filters__options {
     .option__link,
     .form-check-label {
-      font-size: 14px;
+      font-size: $font * 1.4;
     }
 
     .form-check-input {
-      font-size: 10px;
+      font-size: $font;
     }
   }
-  /* fin paginas bebidas */
-  /* comienzo pagina contacto */
+  /* fin páginas bebidas */
+  /* comienzo página contacto */
   .header__contacto {
     .headercontac_titu {
-      font-size: 20px;
+      font-size: $font * 2;
     }
   }
-  /* fin pagina contacto */
-  /* comienzo pagina nosotros */
+  /* fin página contacto */
+  /* comienzo página nosotros */
   .header__nosotros {
     .headernos_titu {
-      font-size: 20px;
+      font-size: $font * 2;
     }
   }
   .about {
@@ -277,14 +284,25 @@
     }
   }
 
-  /* fin pagina nosotros */
+  /* fin página nosotros */
+
+  /********* FOOTER INICIO SESIÓN, ERROR 404 Y REGISTRO USER *********/
+  .footer-2 {
+    align-items: flex-start;
+    flex-direction: column;
+
+    a {
+      font-size: $font * 1.2;
+    }
+  }
+  /********* FIN DE FOOTER INICIO SESIÓN, ERROR 404 Y REGISTRO USER *********/
 }
 
 @media screen and (max-width: 420px) {
   /* index */
   .carousel {
     .carousel-inner {
-      font-size: 20px;
+      font-size: $font * 2;
     }
   }
 
@@ -318,14 +336,25 @@
     }
   }
 
+  .ofertas {
+    .email__container {
+      display: $dFlex;
+      flex-direction: column;
+      align-items: center;
+      input[type="email"] {
+        @include sizes(100px, 30px);
+        font-size: $font;
+      }
+    }
+  }
   /* fin index */
-  /* comienzo paginas bebidas */
+  /* comienzo páginas bebidas */
   .header__bebidas {
     .headerbeb_titu {
-      font-size: 18px;
+      font-size: $font * 1.8;
       top: 78%;
       h1 {
-        font-size: 18px;
+        font-size: $font * 1.8;
       }
     }
   }
@@ -334,25 +363,25 @@
     flex-direction: column;
     .option__link,
     .form-check-label {
-      font-size: 14px;
+      font-size: $font * 1.4;
     }
     .form-check-input {
-      font-size: 10px;
+      font-size: $font;
     }
   }
-  /* fin paginas bebidas */
+  /* fin páginas bebidas */
 
-  /* comienzo pagina contacto */
+  /* comienzo página contacto */
   .header__contacto {
     .headercontac_titu {
-      font-size: 10px;
+      font-size: $font;
     }
   }
-  /* fin pagina contacto */
-  /* comienzo pagina nosotros */
+  /* fin página contacto */
+  /* comienzo página nosotros */
   .header__nosotros {
     .headernos_titu {
-      font-size: 10px;
+      font-size: $font;
     }
   }
 
@@ -365,5 +394,30 @@
     }
   }
 
-  /* fin pagina nosotros */
+  /* fin página nosotros */
+  /********* FORMULARIO INICIO SESIÓN Y REGISTRO USER *********/
+  .log {
+    .form-log {
+      @include sizes(200px, 350px);
+      h5 {
+        font-size: $font * 1.5;
+      }
+
+      .controls {
+        @include sizes($ancho * 1.02, 10px);
+        font-size: $font * 1.2;
+      }
+
+      .buttons {
+        @include sizes($ancho * 0.7, 30px);
+      }
+      p {
+        font-size: $font * 1.1;
+        a {
+          font-size: $font * 1.1;
+        }
+      }
+    }
+  }
+  /********* FIN DE FORMULARIO INICIO SESIÓN Y REGISTRO USER *********/
 }

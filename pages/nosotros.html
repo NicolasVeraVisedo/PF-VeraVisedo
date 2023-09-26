@@ -26,10 +26,10 @@
     <title>Vervis: Nosotros</title>
   </head>
   <body>
-    <!--Barra de Navegacion-->
+    <!--Barra de Navegación-->
     <nav class="navbar navbar-expand-md fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="../index.html">
           <img
             src="../assets/img/logos/logo1.png"
             alt="Logotipo Vervis"
@@ -92,9 +92,13 @@
               </button>
             </form>
 
-            <button type="button" class="btn position-relative">
+            <a
+              href="./iniciosesion.html"
+              type="button"
+              class="btn position-relative bg-black rounded-circle"
+            >
               <i class="bx bxs-user"></i>
-            </button>
+            </a>
             <button type="button" class="btn position-relative">
               <i class="bx bx-heart"></i>
             </button>
@@ -112,8 +116,8 @@
         </div>
       </div>
     </nav>
-    <!-- Fin de barra de Navegacion-->
-    <!-- Encabezado con titulo y imagen -->
+    <!-- Fin de barra de Navegación-->
+    <!-- Encabezado con título y imágen -->
     <header class="header__nosotros">
       <img src="../assets/media/rojovideogif-min.gif" alt="RojoMov" />
       <div class="headernos_titu">
@@ -121,10 +125,10 @@
         <h1>NOSOTROS</h1>
       </div>
     </header>
-    <!-- Fin de Encabezado con titulo y imagen -->
+    <!-- Fin de Encabezado con título y imágen -->
 
     <main class="main__nosotros">
-      <!-- Seccion de info sobre nosotros -->
+      <!-- Sección de info sobre nosotros -->
       <section class="about">
         <div class="about__video">
           <video autoplay loop muted>
@@ -178,7 +182,7 @@
           <p class="about__text">La Familia Vervis</p>
         </div>
       </section>
-      <!-- Fin de Seccion de info sobre nosotros -->
+      <!-- Fin de Sección de info sobre nosotros -->
     </main>
 
     <!--Sección pie de página -->
@@ -218,49 +222,37 @@
           <div class="col-xs-12 col-md-6 col-lg-3">
             <p class="h5 mb-4">Secciones</p>
             <div class="mb-3">
-              <a class="text-white text-decoration-none" href="../index.html">
+              <a href="../index.html">
                 <i class="bx bx-home"></i>
                 Principal
               </a>
             </div>
             <div class="mb-3">
-              <a
-                class="text-white text-decoration-none"
-                href="../pages/bebalc.html"
-              >
+              <a href="../pages/bebalc.html">
                 <i class="bx bxs-drink"></i>
                 Bebidas con Alcohol
               </a>
             </div>
             <div class="mb-3">
-              <a
-                class="text-white text-decoration-none"
-                href="../pages/bebsinalc.html"
-              >
+              <a href="../pages/bebsinalc.html">
                 <i class="bx bx-drink"></i>
                 Bebidas sin Alcohol
               </a>
             </div>
             <div class="mb-3">
-              <a
-                class="text-white text-decoration-none"
-                href="../pages/nosotros.html"
-              >
+              <a href="../pages/nosotros.html">
                 <i class="bx bxs-user"></i>
                 Nosotros
               </a>
             </div>
             <div class="mb-3">
-              <a
-                class="text-white text-decoration-none"
-                href="../pages/contacto.html"
-              >
+              <a href="../pages/contacto.html">
                 <i class="bx bxs-contact"></i>
                 Contacto
               </a>
             </div>
             <div class="mb-3">
-              <a href="#top">Volver Arriba</a>
+              <a class="bg-dark rounded p-1" href="#top">Volver Arriba</a>
             </div>
           </div>
           <div class="col-xs-12 col-md-6 col-lg-3">
@@ -271,6 +263,7 @@
             <p class="h5 mt-5">
               Defensa de las y los consumidores. Para reclamos
               <a
+                class="border-bottom rounded-bottom"
                 href="https://autogestion.produccion.gob.ar/consumidores"
                 target="_blank"
               >

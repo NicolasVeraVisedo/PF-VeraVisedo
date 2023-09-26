@@ -19,10 +19,9 @@
   height: 1000px;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
-
+} */
 body {
   font-family: Poppins, sans-serif;
   background: url(../assets/img/rojoraya.webp);
@@ -80,14 +79,14 @@ body {
 }
 .navbar .search-and-icons .buscar__container i {
   padding: 10px;
-  border: 2px solid white;
+  border: 2px solid #ffffff;
   border-radius: 50px;
 }
 .navbar .search-and-icons button[type=button] {
   border-radius: 50px;
 }
 .navbar .search-and-icons button[type=button]:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #ffffff;
   background-color: rgb(252, 149, 245);
   border-radius: 50px;
 }
@@ -114,7 +113,7 @@ body {
   border: 8px solid rgba(0, 0, 0, 0.514);
 }
 .banner__container .alert button {
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 50px;
 }
 .banner__container .alert strong {
@@ -165,8 +164,8 @@ body {
   margin-top: 100px;
   margin-bottom: 100px;
   padding: 30px;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgb(255, 0, 43) 0%, rgb(255, 82, 111) 25%, rgb(0, 0, 0) 50%, rgb(255, 82, 111) 75%, rgb(255, 0, 43) 100%);
+  background: #000000;
+  background: linear-gradient(0deg, rgb(255, 0, 43) 0%, rgb(255, 82, 111) 25%, #000000 50%, rgb(255, 82, 111) 75%, rgb(255, 0, 43) 100%);
 }
 .container_bebalc .card {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.897);
@@ -204,21 +203,21 @@ body {
   text-align: center;
   color: #ffffff;
   border-radius: 10px;
-  background-color: black;
+  background-color: #000000;
 }
 .container_bebalc .titu__bebalc a {
   text-decoration: none;
   color: #ffffff;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid #ffffff;
   border-radius: 50px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-  box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 5px #ffffff;
   padding: 2px;
   margin-right: 10px;
 }
 .container_bebalc .titu__bebalc a:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   color: #000000;
 }
 .container_bebalc .titu__bebalc h2:hover {
@@ -239,8 +238,8 @@ body {
   margin-top: 100px;
   margin-bottom: 100px;
   padding: 30px;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgb(255, 0, 43) 0%, rgb(255, 82, 111) 25%, rgb(0, 0, 0) 50%, rgb(255, 82, 111) 75%, rgb(255, 0, 43) 100%);
+  background: #000000;
+  background: linear-gradient(0deg, rgb(255, 0, 43) 0%, rgb(255, 82, 111) 25%, #000000 50%, rgb(255, 82, 111) 75%, rgb(255, 0, 43) 100%);
 }
 .container_bebsinalc .card {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.897);
@@ -278,21 +277,21 @@ body {
   text-align: center;
   color: #000000;
   border-radius: 10px;
-  background-color: white;
+  background-color: #ffffff;
 }
 .container_bebsinalc .titu__sinalc a {
   text-decoration: none;
   color: #000000;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid #000000;
   border-radius: 50px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-  box-shadow: 0px 0px 10px 5px rgb(0, 0, 0);
+  box-shadow: 0px 0px 10px 5px #000000;
   padding: 2px;
   margin-right: 10px;
 }
 .container_bebsinalc .titu__sinalc a:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: #000000;
   color: #ffffff;
 }
 .container_bebsinalc .titu__sinalc h2:hover {
@@ -320,7 +319,7 @@ body {
 }
 
 /*Fin de Sección Carrousel Data*/
-/*Seccion ofertas*/
+/*Sección ofertas*/
 .ofertas {
   display: flex;
   flex-direction: column;
@@ -331,7 +330,7 @@ body {
   margin: 100px;
   gap: 10px;
   padding: 20px;
-  background-color: rgb(0, 0, 0);
+  background-color: #000000;
 }
 .ofertas .formulario {
   width: 100%;
@@ -352,18 +351,18 @@ body {
   padding: 10px;
 }
 .ofertas .form_control input[type=submit] {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  border-color: rgb(0, 0, 0);
-  padding: 5px 10px;
+  border: 1px solid #000000;
+  border-radius: 25px;
   width: 60px;
   height: 30px;
+  background-color: rgb(255, 82, 111);
+  color: #ffffff;
 }
 .ofertas .form_control input[type=submit]:hover {
-  background-color: rgb(255, 82, 111);
+  background-color: rgb(255, 0, 43);
 }
 
-/*Fin de Seccion ofertas*/
+/*Fin de Sección ofertas*/
 /*Video marcas*/
 .videomarcas {
   background-color: black;
@@ -379,17 +378,25 @@ body {
 }
 
 /*Fin de video marcas*/
-/*Pie de página*/
+/* FIN DE INDEX */
+/*Pie de página para Index, Bebidas con/sin alcohol, Nosotros, Contacto*/
 .footer__container {
   text-align: center;
 }
 .footer__container img {
   width: 15%;
 }
+.footer__container a {
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.footer__container a:hover {
+  text-decoration: underline;
+}
 
-/*Fin de Pie de página*/
-/* FIN DE INDEX */
-/* COMIENZO DE PAGINAS BEBIDAS CON/SIN ALCOHOL */
+/*Fin de Pie de página para Index, Bebidas con/sin alcohol, Nosotros, Contacto*/
+/* COMIENZO DE PÁGINAS BEBIDAS CON/SIN ALCOHOL */
 /* Encabezado */
 .header__bebidas {
   position: relative;
@@ -421,7 +428,7 @@ body {
   border: 8px solid rgba(0, 0, 0, 0.514);
 }
 .header__bebidas .alert button {
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 50px;
 }
 .header__bebidas .alert strong {
@@ -436,7 +443,7 @@ body {
 }
 
 /* Fin de Encabezado */
-/* Seccion de filtros */
+/* Sección de filtros */
 .filters__options {
   width: 100%;
   display: flex;
@@ -444,7 +451,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  background-color: white;
+  background-color: #ffffff;
   list-style: none;
   border-top: 3px solid #ccc;
   border-bottom: 3px solid #ccc;
@@ -479,7 +486,7 @@ body {
   cursor: pointer;
 }
 
-/* Fin de Seccion de filtros */
+/* Fin de Sección de filtros */
 /* Sección de productos */
 .container_bebidas {
   padding: 30px;
@@ -534,8 +541,8 @@ body {
 }
 
 /* Fin de Botón "Ver Más" */
-/* FIN DE BEBIDAS CON/SIN ALCOHOL */
-/* COMIENZO DE PAGINA CONTACTO */
+/* FIN DE PÁGINAS DE BEBIDAS CON/SIN ALCOHOL */
+/* COMIENZO DE PÁGINA CONTACTO */
 /* Encabezado */
 .header__contacto {
   position: relative;
@@ -621,7 +628,7 @@ body {
   border-bottom: 5px solid rgba(0, 0, 0, 0.253);
 }
 .contact-form .form-control {
-  border-color: #000;
+  border-color: #000000;
 }
 .contact-form .form__button {
   display: block;
@@ -645,8 +652,8 @@ body {
 }
 
 /* Fin de Formulario de contacto */
-/* FIN DE PAGINA CONTACTO */
-/* COMIENZO DE PAGINA NOSOTROS */
+/* FIN DE PÁGINA CONTACTO */
+/* COMIENZO DE PÁGINA NOSOTROS */
 /* Encabezado */
 .header__nosotros {
   position: relative;
@@ -689,7 +696,7 @@ body {
 .about {
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 10px 10px 10px rgb(39, 39, 39);
@@ -698,7 +705,7 @@ body {
   margin-bottom: 50px;
 }
 .about:hover {
-  background-color: black;
+  background-color: #000000;
   color: #ffffff;
 }
 .about .about__video {
@@ -729,9 +736,142 @@ body {
 }
 
 /* FIN DE PÁGINA NOSOTROS */
+/********* PÁGINA ERROR 404 *********/
+.body-404 {
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/error404.webp");
+}
+
+.error-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+.error-message .error-message__container {
+  text-align: center;
+  color: #ffffff;
+}
+.error-message .error-message__container h1 {
+  font-size: 60px;
+  margin: 0px;
+}
+.error-message .error-message__container p {
+  font-size: 18px;
+}
+.error-message .error-message__container .animated {
+  animation: bounce 1.5s infinite both;
+}
+.error-message a {
+  background-color: rgb(255, 82, 111);
+}
+.error-message a:hover {
+  background-color: rgb(255, 0, 43);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+/********* FIN DE PÁGINA ERROR 404 *********/
+/********* FOOTER INICIO SESIÓN, ERROR 404 Y REGISTRO USER *********/
+.footer-2 {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  width: 100%;
+}
+.footer-2 a {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+.footer-2 a:hover {
+  text-decoration: underline;
+}
+
+/********* FIN DE FOOTER INICIO SESIÓN, ERROR 404 Y REGISTRO USER *********/
+/********* PÁGINAS INICIO SESIÓN / REGISTRO DE USUARIO *********/
+.body-log {
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../assets/img/user.webp");
+}
+
+.log {
+  width: 100%;
+  height: calc(100vh - 100px);
+  position: relative;
+}
+.log .form-log {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 121, 143, 0.842);
+  box-shadow: 7px 13px 37px rgba(255, 121, 143, 0.842);
+  padding: 20px 30px;
+  border-top: 4px solid #ffffff;
+  color: #ffffff;
+  border-radius: 50px;
+}
+.log .form-log h5 {
+  margin: 0;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid;
+  font-size: 20px;
+}
+.log .form-log .controls {
+  width: 100%;
+  border: 1px solid #000000;
+  margin-bottom: 15px;
+  padding: 11px 10px;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.log .form-log .buttons {
+  width: 100%;
+  height: 40px;
+  background: rgb(255, 0, 43);
+  border: none;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.log .form-log .buttons:hover {
+  background: rgb(252, 149, 245);
+  color: #000000;
+}
+.log .form-log p {
+  height: 40px;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+.log .form-log p a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.log .form-log p a:hover {
+  text-decoration: underline;
+}
+
+/********* FIN DE PÁGINAS INICIO SESIÓN / REGISTRO DE USUARIO *********/
 /* MEDIA QUERIES */
 @media screen and (max-width: 960px) {
-  /* barra de navegacion */
+  /* barra de navegación */
   .navbar {
     letter-spacing: 0.1em;
   }
@@ -744,7 +884,7 @@ body {
   .navbar .search-and-icons form {
     flex: 1;
   }
-  /* fin  barra de navegacion */
+  /* fin  barra de navegación */
   /* index */
   .videomarcas {
     display: none;
@@ -755,6 +895,7 @@ body {
   .ofertas .email__container input[type=email] {
     width: 120px;
     height: 30px;
+    font-size: 13px;
   }
   .carousel .carousel-inner {
     font-size: 40px;
@@ -763,7 +904,7 @@ body {
     height: 700px;
   }
   /* fin index */
-  /* comienzo paginas bebidas */
+  /* comienzo páginas bebidas */
   .header__bebidas .headerbeb_titu {
     font-size: 40px;
   }
@@ -774,13 +915,13 @@ body {
   .filters__options .form-check-label {
     font-size: 18px;
   }
-  /* fin paginas bebidas */
-  /* comienzo pagina contacto */
+  /* fin páginas bebidas */
+  /* comienzo página contacto */
   .header__contacto .headercontac_titu {
     font-size: 40px;
   }
-  /* fin pagina contacto */
-  /* comienzo pagina nosotros */
+  /* fin página contacto */
+  /* comienzo página nosotros */
   .header__nosotros .headernos_titu {
     font-size: 40px;
   }
@@ -790,11 +931,11 @@ body {
   .about .about__video.mob {
     display: block;
   }
-  /* fin pagina nosotros */
+  /* fin página nosotros */
 }
 @media screen and (max-width: 768px) {
   /* nav mobile */
-  /* barra de navegacion */
+  /* barra de navegación */
   .navbar .navbar-brand img {
     max-width: 7em;
   }
@@ -814,7 +955,7 @@ body {
   .navbar .navbar-collapse .search-and-icons #buscar__pantxl {
     display: none;
   }
-  /* fin  barra de navegacion */
+  /* fin  barra de navegación */
   /* index */
   .condicionaltemp {
     height: 500px;
@@ -822,8 +963,11 @@ body {
   .carousel .carousel-inner {
     font-size: 40px;
   }
+  .ofertas .email__container input[type=email] {
+    font-size: 13px;
+  }
   /* fin index */
-  /* comienzo paginas bebidas */
+  /* comienzo páginas bebidas */
   .header__bebidas .headerbeb_titu {
     font-size: 32px;
   }
@@ -834,13 +978,13 @@ body {
   .filters__options .form-check-input {
     font-size: 12px;
   }
-  /* fin paginas bebidas */
-  /* comienzo pagina contacto */
+  /* fin páginas bebidas */
+  /* comienzo página contacto */
   .header__contacto .headercontac_titu {
     font-size: 30px;
   }
-  /* fin pagina contacto */
-  /* comienzo pagina nosotros */
+  /* fin página contacto */
+  /* comienzo página nosotros */
   .header__nosotros .headernos_titu {
     font-size: 30px;
   }
@@ -850,7 +994,7 @@ body {
   .about .about__video.mob {
     display: block;
   }
-  /* fin pagina nosotros */
+  /* fin página nosotros */
 }
 @media screen and (max-width: 576px) {
   /* index */
@@ -858,7 +1002,7 @@ body {
     font-size: 30px;
   }
   /* fin index */
-  /* comienzo paginas bebidas */
+  /* comienzo páginas bebidas */
   .header__bebidas .headerbeb_titu {
     font-size: 25px;
   }
@@ -869,13 +1013,13 @@ body {
   .filters__options .form-check-input {
     font-size: 10px;
   }
-  /* fin paginas bebidas */
-  /* comienzo pagina contacto */
+  /* fin páginas bebidas */
+  /* comienzo página contacto */
   .header__contacto .headercontac_titu {
     font-size: 20px;
   }
-  /* fin pagina contacto */
-  /* comienzo pagina nosotros */
+  /* fin página contacto */
+  /* comienzo página nosotros */
   .header__nosotros .headernos_titu {
     font-size: 20px;
   }
@@ -885,7 +1029,16 @@ body {
   .about .about__video.mob {
     display: block;
   }
-  /* fin pagina nosotros */
+  /* fin página nosotros */
+  /********* FOOTER INICIO SESIÓN, ERROR 404 Y REGISTRO USER *********/
+  .footer-2 {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .footer-2 a {
+    font-size: 12px;
+  }
+  /********* FIN DE FOOTER INICIO SESIÓN, ERROR 404 Y REGISTRO USER *********/
 }
 @media screen and (max-width: 420px) {
   /* index */
@@ -895,8 +1048,18 @@ body {
   .condicionaltemp {
     height: 300px;
   }
+  .ofertas .email__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ofertas .email__container input[type=email] {
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+  }
   /* fin index */
-  /* comienzo paginas bebidas */
+  /* comienzo páginas bebidas */
   .header__bebidas .headerbeb_titu {
     font-size: 18px;
     top: 78%;
@@ -914,13 +1077,13 @@ body {
   .filters__options .form-check-input {
     font-size: 10px;
   }
-  /* fin paginas bebidas */
-  /* comienzo pagina contacto */
+  /* fin páginas bebidas */
+  /* comienzo página contacto */
   .header__contacto .headercontac_titu {
     font-size: 10px;
   }
-  /* fin pagina contacto */
-  /* comienzo pagina nosotros */
+  /* fin página contacto */
+  /* comienzo página nosotros */
   .header__nosotros .headernos_titu {
     font-size: 10px;
   }
@@ -930,7 +1093,31 @@ body {
   .about .about__video.mob {
     display: block;
   }
-  /* fin pagina nosotros */
+  /* fin página nosotros */
+  /********* FORMULARIO INICIO SESIÓN Y REGISTRO USER *********/
+  .log .form-log {
+    width: 200px;
+    height: 350px;
+  }
+  .log .form-log h5 {
+    font-size: 15px;
+  }
+  .log .form-log .controls {
+    width: 102%;
+    height: 10px;
+    font-size: 12px;
+  }
+  .log .form-log .buttons {
+    width: 70%;
+    height: 30px;
+  }
+  .log .form-log p {
+    font-size: 11px;
+  }
+  .log .form-log p a {
+    font-size: 11px;
+  }
+  /********* FIN DE FORMULARIO INICIO SESIÓN Y REGISTRO USER *********/
 }
 
 /*# sourceMappingURL=style.css.map */

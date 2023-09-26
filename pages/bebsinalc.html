@@ -26,10 +26,10 @@
     <title>Vervis: Bebidas sin Alcohol</title>
   </head>
   <body>
-    <!--Barra de Navegacion-->
+    <!--Barra de Navegación-->
     <nav class="navbar navbar-expand-md fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="../index.html">
           <img
             src="../assets/img/logos/logo1.png"
             alt="Logotipo Vervis"
@@ -92,9 +92,13 @@
               </button>
             </form>
 
-            <button type="button" class="btn position-relative">
+            <a
+              href="./iniciosesion.html"
+              type="button"
+              class="btn position-relative bg-black rounded-circle"
+            >
               <i class="bx bxs-user"></i>
-            </button>
+            </a>
             <button type="button" class="btn position-relative">
               <i class="bx bx-heart"></i>
             </button>
@@ -112,8 +116,8 @@
         </div>
       </div>
     </nav>
-    <!-- Fin de barra de Navegacion-->
-    <!-- Encabezado con titulo y imagen -->
+    <!-- Fin de barra de Navegación-->
+    <!-- Encabezado con alerta, título y imágen -->
     <header class="header__bebidas">
       <!-- Info de Alerta -->
       <div class="alert">
@@ -131,10 +135,10 @@
         <h1 class="text-white">BEBIDAS SIN ALCOHOL</h1>
       </div>
     </header>
-    <!--Fin de Encabezado con titulo y imagen -->
+    <!--Fin de Encabezado con alerta, título y imágen -->
 
     <main>
-      <!-- Filtros de busqueda -->
+      <!-- Filtros de búsqueda -->
       <div>
         <ul class="filters__options">
           <li class="filter__option">
@@ -173,9 +177,9 @@
           </li>
         </ul>
       </div>
-      <!-- Fin de Filtros de busqueda -->
+      <!-- Fin de Filtros de búsqueda -->
 
-      <!-- Seccion de bebidas -->
+      <!-- Sección de bebidas -->
 
       <div class="container_bebidas">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -275,9 +279,9 @@
           </div>
         </div>
       </div>
-      <!-- Fin de Seccion de bebidas -->
+      <!-- Fin de Sección de bebidas -->
 
-      <!-- Boton de Más productos aquí -->
+      <!-- Botón de Más productos aquí -->
       <button class="view-more">Ver Más</button>
     </main>
 
@@ -319,49 +323,37 @@
           <div class="col-xs-12 col-md-6 col-lg-3">
             <p class="h5 mb-4">Secciones</p>
             <div class="mb-3">
-              <a class="text-white text-decoration-none" href="../index.html">
+              <a href="../index.html">
                 <i class="bx bx-home"></i>
                 Principal
               </a>
             </div>
             <div class="mb-3">
-              <a
-                class="text-white text-decoration-none"
-                href="../pages/bebalc.html"
-              >
+              <a href="../pages/bebalc.html">
                 <i class="bx bxs-drink"></i>
                 Bebidas con Alcohol
               </a>
             </div>
             <div class="mb-3">
-              <a
-                class="text-white text-decoration-none"
-                href="../pages/bebsinalc.html"
-              >
+              <a href="../pages/bebsinalc.html">
                 <i class="bx bx-drink"></i>
                 Bebidas sin Alcohol
               </a>
             </div>
             <div class="mb-3">
-              <a
-                class="text-white text-decoration-none"
-                href="../pages/nosotros.html"
-              >
+              <a href="../pages/nosotros.html">
                 <i class="bx bxs-user"></i>
                 Nosotros
               </a>
             </div>
             <div class="mb-3">
-              <a
-                class="text-white text-decoration-none"
-                href="../pages/contacto.html"
-              >
+              <a href="../pages/contacto.html">
                 <i class="bx bxs-contact"></i>
                 Contacto
               </a>
             </div>
             <div class="mb-3">
-              <a href="#top">Volver Arriba</a>
+              <a class="bg-dark rounded p-1" href="#top">Volver Arriba</a>
             </div>
           </div>
           <div class="col-xs-12 col-md-6 col-lg-3">
@@ -372,6 +364,7 @@
             <p class="h5 mt-5">
               Defensa de las y los consumidores. Para reclamos
               <a
+                class="border-bottom rounded-bottom"
                 href="https://autogestion.produccion.gob.ar/consumidores"
                 target="_blank"
               >
