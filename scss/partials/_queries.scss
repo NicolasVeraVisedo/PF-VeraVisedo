@@ -399,7 +399,7 @@
   .log {
     .form-log {
       @include sizes(200px, 350px);
-      h5 {
+      h1 {
         font-size: $font * 1.5;
       }
 
